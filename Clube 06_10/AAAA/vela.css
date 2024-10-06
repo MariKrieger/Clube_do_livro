@@ -1,0 +1,21 @@
+.Clubs, .Books {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    font-size: 35px;
+}
+
+
+.Clubs {
+    margin-left: 120px; 
+}
+
+.Books {
+    margin-left: 220px; 
+}
+
+.image {
+    width: 70px;
+    margin-left: 220px; 
+
+}
+

@@ -59,9 +59,19 @@ header {
 
 
 .image {
-    width: 70px;
-    margin-left: 30px; 
+    margin-left: 40px; 
+    width: 120px;
+    height: 150px;
+    margin-top: 60px;
 
+}
+
+.Rica {
+    display: flex;
+}
+
+.Ponte {
+    display: flex;
 }
 
 .zoom {
@@ -70,11 +80,15 @@ header {
 }
 
 .Tori {
-    background-color: pink;
+    background-color: #cbae99;
     border: none;
-    width: 50px;
-    height: 50px;
+    width: 150px;
+    height: 70px;
     border-radius: 10%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 .Flower {
@@ -82,7 +96,7 @@ header {
     margin-left: 20px;
     margin-top: 15px;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .Power {

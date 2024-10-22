@@ -51,16 +51,16 @@ header {
     padding-top: 65px;
 }
 
+main p hr{
+    border-style: inset;
+    border-width: 1px;
+}
+
 .TESTE{
     text-decoration: none;
     color: black;
 }
 
-main {
-    padding-bottom: 100px;
-    display: flex; /* Adiciona flexbox ao contêiner */
-
-}
 
 .Clubs, .Books, .Tellme {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -95,33 +95,53 @@ main {
 }
 
 
-
-
-
 main {
-
-    background-image: url('fundo2.jpg');  
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    height: 150px;
+    height: auto;
     margin: 0;
     padding: 0;
+    display: flex;
    
 }
 
-.Pop {
-    padding-top: 170px;
+.Pop, .Young, .Domingo{
+    
     font-family: Arial, Helvetica, sans-serif ;
     margin-left: 20px;
 }
 
-.Stars {
-    padding-top: 190px;
+.Stars, .Ring, .Nick {
+    
     font-family: Arial, Helvetica, sans-serif ;
     text-align: left;
 }
 
 .Pop, .Stars {
     border: #cbae99;
+}
+
+.Darcy {
+    width: 90px;
+    height: 90px;
+    margin-left: 20px;
+}
+
+hr{
+    display: flex;
+    width: 100%;
+    border-style: inset;
+    border-width: 1px;
+}
+
+.Tae {
+    width: 150px;
+    height: 150px;
+}
+
+.Apt {
+    width: 90px;
+    height: 90px;
+}
+
+.Left {
+    text-align: left;
 }

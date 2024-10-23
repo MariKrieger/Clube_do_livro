@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+body {
+    background-color: #FFFF;
+    
+    
+}
+.Logo {
+    width: 120px;
+    float: left;
+    margin-left: 30px;
+    border-radius: 50%;
+    border-color: black;
+    }
+
+
+header {
+    height: 150px;
+    padding-top: 10px;
+    display: flex;
+    background-color: #cbae99;
+}
+
+.titulo {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 40px;
+   margin-left: 160px;
+   text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 30px;
+    padding-top: 60px;
+}
+
+.menu { 
+    margin-left: 50px;
+}
+
+.Monica, .Rachel, .Phoebe {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: .875rem;
+    padding-top: 65px;
+}
+
+main p hr{
+    border-style: inset;
+    border-width: 1px;
+}
+
+.TESTE{
+    text-decoration: none;
+    color: black;
+}
+
+
+.Clubs, .Books, .Tellme {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    font-size: 35px;
+}
+
+.Clubs {
+    margin-left: 120px; /* Mantém o espaço à esquerda */
+}
+
+.Books {
+    margin-left: 220px; /* Mantém o espaço à direita */
+}
+
+.Tellme {
+    margin-left: 270px; /* Mantém o espaço à direita */
+}
+
+
+.image {
+    width: 120px;
+    height: 150px;
+    margin-left: 220px; 
+
+}
+
+
+
+.zoom {
+    font-size: small;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+main {
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+   
+}
+
+.Pop, .Young, .Domingo{
+    
+    font-family: Arial, Helvetica, sans-serif ;
+    margin-left: 20px;
+}
+
+.Stars, .Ring, .Nick {
+    
+    font-family: Arial, Helvetica, sans-serif ;
+    text-align: left;
+}
+
+.Pop, .Stars {
+    border: #cbae99;
+}
+
+.Darcy {
+    width: 90px;
+    height: 90px;
+    margin-left: 20px;
+}
+
+hr{
+    display: flex;
+    width: 100%;
+    border-style: inset;
+    border-width: 1px;
+}
+
+.Tae {
+    width: 150px;
+    height: 150px;
+}
+
+.Apt {
+    width: 90px;
+    height: 90px;
+}
+
+.Left {
+    text-align: left;
+}

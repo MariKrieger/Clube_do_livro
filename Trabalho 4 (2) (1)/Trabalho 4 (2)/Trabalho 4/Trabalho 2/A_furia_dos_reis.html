@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Progresso de leitura</title>
+<link rel="stylesheet" href="Progress5.css">
+</head>
+<body>
+    <header>
+        <a href="./Interface.html"><img src="C.jpg" class="Logo"></a>
+        <h1 class="titulo">BOOK CLUB</h1>
+        <ul class="menu">
+            <li class="Monica">Clubes
+                <ul>
+                    <a href="./Inicial.html" class="TESTE"><li>Clubes públicos</li></a>
+                    <a href="./Clube.html" class="TESTE"><li>Clubes privados</li></a>
+                    <a href="./Crie.html" class="TESTE"><li>Criar um clube</li></a>
+                </ul>
+            </li>
+            <li class="Rachel">Livros
+                <ul>
+                    <li><a href="./Acao.html" class="TESTE">Ação</a></li>
+                    <li><a href="./Aventura.html" class="TESTE">Aventura</a></li>
+                    <li><a href="./Distopia.html" class="TESTE">Distopia</a></li>
+                    <li><a href="./Drama.html" class="TESTE">Drama</a></li>
+                    <li><a href="./Fantasia.html" class="TESTE">Fantasia</a></li>
+                    <li><a href="./Ficcao.html" class="TESTE">Ficção</a></li>
+                    <li><a href="./Investigacao.html" class="TESTE">Investigação</a></li>
+                    <li><a href="./Poesia.html" class="TESTE">Poesia</a></li>
+                    <li><a href="./Romance.html" class="TESTE">Romance</a></li>
+                    <li><a href="./Suspense.html" class="TESTE">Suspense</a></li>
+                    <li><a href="./Terror.html" class="TESTE">Terror</a></li>
+                </ul>
+            </li>
+            <li class="Phoebe">Extras
+                <ul>
+                    <a href="./Resenhas.html" class="TESTE"><li>Resenhas</li></a>
+                    <a href="./Timer.html" class="TESTE"><li>Timer</li></a>
+                    <a href="./Metas_desafios.html" class="TESTE"><li>Metas e desafios</li></a>
+                </ul>
+            </li>
+        </ul>
+    </header>
+<main>
+<div class="main-container">
+    <div class="container">
+        <img src="125.jpg" alt="Capa do Livro" class="book-cover">
+        <div class="book-info">
+            <h2>A Fúria dos Reis</h2>
+            <p>Geogre R.R. Martin</p>
+            <div class="stars" id="rating-stars">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label for="pages">Páginas Lidas</label>
+            <input type="number" id="pages" min="0" max="473" value="60">
+        </div>
+
+        <div class="input-group">
+            <label for="start-date">Começou a ler em</label>
+            <input type="date" id="start-date" value="2024-10-31">
+        </div>
+
+        <div class="input-group">
+            <label for="end-date">Terminou de ler em</label>
+            <input type="date" id="end-date">
+        </div>
+
+        <div class="input-group">
+            <label for="shelf">Prateleira</label>
+            <select id="shelf">
+                <option value="reading">Lendo</option>
+                <option value="to-read">Quero ler</option>
+                <option value="read">Lido</option>
+            </select>
+        </div>
+        <button class="save-button" onclick="saveData()">SALVAR</button>
+    </div>
+
+    <div class="empty-container">
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="#e4c7c3" class="bi bi-file-text-fill" viewBox="0 0 16 16">
+            <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M5 4h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1m-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5M5 8h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1m0 2h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1"/>
+        </svg>
+        <h2 class="Beauty">Sinopse</h2>
+        <p class="Beast">Um cometa da cor de fogo e sangue corta os céus. E, da antiga cidadela de Pedra do Dragão às costas áridas de Winterfell, reina o caos. Em A fúria dos reis , seis facções disputam o controle de uma terra dividida e o direito de ocupar o Trono de Ferro de Westeros – e estão dispostos a encarar tempestades, levantes e guerras para isso. Nesta história, irmão trama contra irmão e os mortos se levantam para caminhar pela noite. Aqui, uma princesa se disfarça de menino órfão, um cavaleiro se prepara para encarar uma pérfida feiticeira e bárbaros descem das Montanhas da Lua para saquear os campos. Em um contexto de incesto e fratricídio, alquimia e assassinato, a vitória será dos homens e mulheres que possuírem o mais frio aço... e o mais frio coração. Pois, quando se desperta a fúria dos reis, a terra inteira treme. 
+            </p>
+    </div>
+    <div class="tab">
+        <a href="./A_guerra_dos_tronos.html"><button class="tablinks" onclick="openCity(event, 'London')">1° A Guerra dos Tronos</button></a>
+        <a href="./A_furia_dos_reis.html"><button class="tablinks" onclick="openCity(event, 'Paris')">2° A Fúria dos Reis</button></a>
+        <a href="./A_tormenta_de_espadas.html"><button class="tablinks" onclick="openCity(event, 'Tokyo')">3° A Tormenta de Espadas</button></a>
+        <a href="./O_festim_dos_corvos.html"><button class="tablinks" onclick="openCity(event, 'London')">4° O Festim dos Corvos</button></a>
+        <a href="./A_danca_dos_dragoes.html"><button class="tablinks" onclick="openCity(event, 'London')">5° A Dança dos Dragões</button></a>
+    </div>
+</div>
+
+<script src="Progresso.js"></script>
+
+</body>
+</html>

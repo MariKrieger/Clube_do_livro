@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Progresso de leitura</title>
+<link rel="stylesheet" href="Progress.css">
+</head>
+<body>
+    <header>
+        <a href="./Interface.html"><img src="C.jpg" class="Logo"></a>
+        <h1 class="titulo">BOOK CLUB</h1>
+        <ul class="menu">
+            <li class="Monica">Clubes
+                <ul>
+                    <a href="./Inicial.html" class="TESTE"><li>Clubes públicos</li></a>
+                    <a href="./Clube.html" class="TESTE"><li>Clubes privados</li></a>
+                    <a href="./Crie.html" class="TESTE"><li>Criar um clube</li></a>
+                </ul>
+            </li>
+            <li class="Rachel">Livros
+                <ul>
+                    <li><a href="./Acao.html" class="TESTE">Ação</a></li>
+                    <li><a href="./Aventura.html" class="TESTE">Aventura</a></li>
+                    <li><a href="./Distopia.html" class="TESTE">Distopia</a></li>
+                    <li><a href="./Drama.html" class="TESTE">Drama</a></li>
+                    <li><a href="./Fantasia.html" class="TESTE">Fantasia</a></li>
+                    <li><a href="./Ficcao.html" class="TESTE">Ficção</a></li>
+                    <li><a href="./Investigacao.html" class="TESTE">Investigação</a></li>
+                    <li><a href="./Poesia.html" class="TESTE">Poesia</a></li>
+                    <li><a href="./Romance.html" class="TESTE">Romance</a></li>
+                    <li><a href="./Suspense.html" class="TESTE">Suspense</a></li>
+                    <li><a href="./Terror.html" class="TESTE">Terror</a></li>
+                </ul>
+            </li>
+            <li class="Phoebe">Extras
+                <ul>
+                    <a href="./Resenhas.html" class="TESTE"><li>Resenhas</li></a>
+                    <a href="./Timer.html" class="TESTE"><li>Timer</li></a>
+                    <a href="./Metas_desafios.html" class="TESTE"><li>Metas e desafios</li></a>
+                </ul>
+            </li>
+        </ul>
+    </header>
+<main>
+<div class="main-container">
+    <div class="container">
+        <img src="64.jpg" alt="Capa do Livro" class="book-cover">
+        <div class="book-info">
+            <h2>As Quatro Rainhas Mortas</h2>
+            <p>Astrid Scholte</p>
+            <div class="stars" id="rating-stars">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label for="pages">Páginas Lidas</label>
+            <input type="number" id="pages" min="0" max="473" value="60">
+        </div>
+
+        <div class="input-group">
+            <label for="start-date">Começou a ler em</label>
+            <input type="date" id="start-date" value="2024-10-31">
+        </div>
+
+        <div class="input-group">
+            <label for="end-date">Terminou de ler em</label>
+            <input type="date" id="end-date">
+        </div>
+
+        <div class="input-group">
+            <label for="shelf">Prateleira</label>
+            <select id="shelf">
+                <option value="reading">Lendo</option>
+                <option value="to-read">Quero ler</option>
+                <option value="read">Lido</option>
+            </select>
+        </div>
+        <button class="save-button" onclick="saveData()">SALVAR</button>
+    </div>
+
+    <div class="empty-container">
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="#e4c7c3" class="bi bi-file-text-fill" viewBox="0 0 16 16">
+            <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M5 4h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1m-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5M5 8h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1m0 2h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1"/>
+        </svg>
+        <h2 class="Beauty">Sinopse</h2>
+        <p class="Beast">No ano em que a história se passa, as quatro comandantes de Quadara são: Marguerite, rainha de Toria, 40 anos; Iris, rainha de Archia, 30 anos; Corra, a rainha de Eonia, 25 anos; Stessa a rainha de Ludia, 16 anos. É fácil notar que não existe idade mínima ou máxima para ser rainha e, além do mais, cada uma tem sua personalidade e um estilo de pensamento. Pode parecer difícil, mas no fim das contas conseguem se entender e governar em paz de acordo com as Leis das Rainhas. Enquanto somos apresentados à esse mundo pelo ponto de vista das rainhas, conhecemos Keralie, a melhor larápia e mentirosa de Jetée, um distrito de Toria. 
+            
+            É aí que vocês se perguntam: o que Keralie, uma ladra profissional, tem a ver com as rainhas? Bom, não é segredo para ninguém que as rainhas vão morrer, já que o próprio título nos revela o fato. A questão está no porquê as rainhas estão morrendo, uma a uma, e quem está matando-as. Afinal, se as rainhas são mortas e não possuem descendentes, como o molde do reino será sustentado? É aí que Keralie entra, pois um dos seus furtos deu a ela informações extremamente valiosas que podem desvendar o mistério e, consequentemente, renderem à ela uma ótima recompensa.
+            Então America conhece pessoalmente o príncipe - e percebe que a vida com que sempre sonhou talvez não seja nada comparada ao futuro que nunca tinha ousado imaginar.
+        </p>
+    </div>
+</div>
+
+<script src="Progresso.js"></script>
+
+</body>
+</html>

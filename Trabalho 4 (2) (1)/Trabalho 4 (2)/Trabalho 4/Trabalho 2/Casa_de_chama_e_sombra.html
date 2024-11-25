@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Progresso de leitura</title>
+<link rel="stylesheet" href="Progress3.css">
+</head>
+<body>
+    <header>
+        <a href="./Interface.html"><img src="C.jpg" class="Logo"></a>
+        <h1 class="titulo">BOOK CLUB</h1>
+        <ul class="menu">
+            <li class="Monica">Clubes
+                <ul>
+                    <li>Clubes públicos</li>
+                    <li>Clubes privados</li>
+                    <li>Criar um clube</li>
+                </ul>
+            </li>
+            <li class="Rachel">Livros
+                <ul>
+                    <li><a href="./Acao.html" class="TESTE">Ação</a></li>
+                    <li><a href="./Aventura.html" class="TESTE">Aventura</a></li>
+                    <li><a href="./Distopia.html" class="TESTE">Distopia</a></li>
+                    <li><a href="./Drama.html" class="TESTE">Drama</a></li>
+                    <li><a href="./Fantasia.html" class="TESTE">Fantasia</a></li>
+                    <li><a href="./Ficcao.html" class="TESTE">Ficção</a></li>
+                    <li><a href="./Investigacao.html" class="TESTE">Investigação</a></li>
+                    <li><a href="./Poesia.html" class="TESTE">Poesia</a></li>
+                    <li><a href="./Romance.html" class="TESTE">Romance</a></li>
+                    <li><a href="./Suspense.html" class="TESTE">Suspense</a></li>
+                    <li><a href="./Terror.html" class="TESTE">Terror</a></li>
+                </ul>
+            </li>
+            <li class="Phoebe">Extras
+                <ul>
+                    <li>Resenhas</li>
+                    <li>Timer</li>
+                    <li>Metas e desafios</li>
+                </ul>
+            </li>
+    </header>
+<main>
+<div class="main-container">
+    <div class="container">
+        <img src="16.jpg" alt="Capa do Livro" class="book-cover">
+        <div class="book-info">
+            <h2>Casa de Chama e Sombra</h2>
+            <p>Sarah J. Maas</p>
+            <div class="stars" id="rating-stars">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label for="pages">Páginas Lidas</label>
+            <input type="number" id="pages" min="0" max="473" value="60">
+        </div>
+
+        <div class="input-group">
+            <label for="start-date">Começou a ler em</label>
+            <input type="date" id="start-date" value="2024-10-31">
+        </div>
+
+        <div class="input-group">
+            <label for="end-date">Terminou de ler em</label>
+            <input type="date" id="end-date">
+        </div>
+
+        <div class="input-group">
+            <label for="shelf">Prateleira</label>
+            <select id="shelf">
+                <option value="reading">Lendo</option>
+                <option value="to-read">Quero ler</option>
+                <option value="read">Lido</option>
+            </select>
+        </div>
+        <button class="save-button" onclick="saveData()">SALVAR</button>
+    </div>
+
+    <div class="empty-container">
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="#e4c7c3" class="bi bi-file-text-fill" viewBox="0 0 16 16">
+            <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M5 4h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1m-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5M5 8h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1m0 2h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1"/>
+          </svg>
+        <h2 class="Beauty">Sinopse</h2>
+        <p class="Beast">Por essa Bryce Quinlan realmente não esperava. Ela nunca imaginou que fosse sair de Midgard, mas os malditos asteri a forçaram a literalmente procurar pelas portas do Inferno. Mas o Inferno está… diferente? Uma grama imaculada e uma linda cidade não eram exatamente o que ela estava esperando encontrar por lá. Isso sem falar dos habitantes do lugar, que são tão belos quanto letais. Onde Bryce foi parar? 
+            Tudo o que Bryce ama está em Midgard: sua família, seus amigos, seu parceiro. Presa em mundo desconhecido, ela vai precisar de todos os artifícios à disposição para encontrar o caminho de volta para casa. Tarefa nada fácil quando ela não faz ideia de quem é confiável ou não. 
+            Nesse meio-tempo, Hunt Athalar ainda está em Midgard. Ele já esteve em algumas enrascadas na vida, mas a que ele se encontra atualmente pode muito bem levar o prêmio de pior de todas. Depois de poucos meses em que tudo estava indo maravilhosamente bem, ele agora está preso de novo, com a sua liberdade em xeque e, ainda por cima, sem fazer a menor ideia do que aconteceu com Bryce. Hunt está desesperado para ajudá-la, mas até que consiga escapar das garras dos asteri,  suas mãos estão atadas, e isso não é nenhuma metáfora.
+            </p>
+    </div>
+    <div class="tab">
+        <a href="./Cidade_da_lua_crescente.html"><button class="tablinks" onclick="openCity(event, 'London')">1° Cidade da Lua Crescente</button></a>
+        <a href="./Casa_de_ceu_e_sopro.html"><button class="tablinks" onclick="openCity(event, 'Paris')">2° Casa de Céu e Sopro</button></a>
+        <a href="./Casa_de_chama_e_sombra.html"><button class="tablinks" onclick="openCity(event, 'Tokyo')">3° Casa de Chama e Sombra</button></a>
+    </div>
+
+</div>
+
+<script src="Progresso.js"></script>
+</body>
+</html>

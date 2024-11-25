@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Progresso de leitura</title>
+<link rel="stylesheet" href="Progress6.css">
+</head>
+<body>
+    <header>
+        <a href="./Interface.html"><img src="C.jpg" class="Logo"></a>
+        <h1 class="titulo">BOOK CLUB</h1>
+        <ul class="menu">
+            <li class="Monica">Clubes
+                <ul>
+                    <a href="./Inicial.html" class="TESTE"><li>Clubes públicos</li></a>
+                    <a href="./Clube.html" class="TESTE"><li>Clubes privados</li></a>
+                    <a href="./Crie.html" class="TESTE"><li>Criar um clube</li></a>
+                </ul>
+            </li>
+            <li class="Rachel">Livros
+                <ul>
+                    <li><a href="./Acao.html" class="TESTE">Ação</a></li>
+                    <li><a href="./Aventura.html" class="TESTE">Aventura</a></li>
+                    <li><a href="./Distopia.html" class="TESTE">Distopia</a></li>
+                    <li><a href="./Drama.html" class="TESTE">Drama</a></li>
+                    <li><a href="./Fantasia.html" class="TESTE">Fantasia</a></li>
+                    <li><a href="./Ficcao.html" class="TESTE">Ficção</a></li>
+                    <li><a href="./Investigacao.html" class="TESTE">Investigação</a></li>
+                    <li><a href="./Poesia.html" class="TESTE">Poesia</a></li>
+                    <li><a href="./Romance.html" class="TESTE">Romance</a></li>
+                    <li><a href="./Suspense.html" class="TESTE">Suspense</a></li>
+                    <li><a href="./Terror.html" class="TESTE">Terror</a></li>
+                </ul>
+            </li>
+            <li class="Phoebe">Extras
+                <ul>
+                    <a href="./Resenhas.html" class="TESTE"><li>Resenhas</li></a>
+                    <a href="./Timer.html" class="TESTE"><li>Timer</li></a>
+                    <a href="./Metas_desafios.html" class="TESTE"><li>Metas e desafios</li></a>
+                </ul>
+            </li>
+        </ul>
+    </header>
+<main>
+<div class="main-container">
+    <div class="container">
+        <img src="154.jpg" alt="Capa do Livro" class="book-cover">
+        <div class="book-info">
+            <h2>Os homens que não amavam as mulheres</h2>
+            <p>Stieg Larsson</p>
+            <div class="stars" id="rating-stars">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label for="pages">Páginas Lidas</label>
+            <input type="number" id="pages" min="0" max="473" value="60">
+        </div>
+
+        <div class="input-group">
+            <label for="start-date">Começou a ler em</label>
+            <input type="date" id="start-date" value="2024-10-31">
+        </div>
+
+        <div class="input-group">
+            <label for="end-date">Terminou de ler em</label>
+            <input type="date" id="end-date">
+        </div>
+
+        <div class="input-group">
+            <label for="shelf">Prateleira</label>
+            <select id="shelf">
+                <option value="reading">Lendo</option>
+                <option value="to-read">Quero ler</option>
+                <option value="read">Lido</option>
+            </select>
+        </div>
+        <button class="save-button" onclick="saveData()">SALVAR</button>
+    </div>
+
+    <div class="empty-container">
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="#e4c7c3" class="bi bi-file-text-fill" viewBox="0 0 16 16">
+            <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M5 4h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1m-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5M5 8h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1m0 2h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1"/>
+        </svg>
+        <h2 class="Beauty">Sinopse</h2>
+        <p class="Beast">Em 1966, Harriet Vanger, jovem herdeira de um império industrial, some sem deixar vestígios. No dia de seu desaparecimento, fechara-se o acesso à ilha onde ela e diversos membros de sua extensa família se encontravam. Desde então, a cada ano, Henrik Vanger, o velho patriarca do clã, recebe uma flor emoldurada - o mesmo presente que Harriet lhe dava, até desaparecer. Ou ser morta. Pois Henrik está convencido de que ela foi assassinada. E que um Vanger a matou.
+            Quase quarenta anos depois, o industrial contrata o jornalista Mikael Blomkvist para conduzir uma investigação particular. Mikael, que acabara de ser condenado por difamação contra o financista Wennerström, preocupa-se com a crise de credibilidade que atinge sua revista, a Millennium . Henrik lhe oferece proteção para a Millennium e provas contra Wennerström, se o jornalista consentir em investigar o assassinato de Harriet. Mikael descobre que suas inquirições não são bem-vindas pela família Vanger, e que muitos querem vê-lo pelas costas. De preferência, morto.
+            Com o auxílio de Lisbeth Salander, que conta com uma mente infatigável para a busca de dados - de preferência, os mais sórdidos -, ele logo percebe que a trilha de segredos e perversidades do clã industrial recua até muito antes do desaparecimento ou morte de Harriet. E segue até muito depois.... até um momento presente, desconfortavelmente presente.            
+            </p>
+    </div>
+    <div class="tab">
+        <a href="./Os_homens_mulheres.html"><button class="tablinks" onclick="openCity(event, 'London')">1° Os homens que não amavam as mulheres</button></a>
+        <a href="./A_menina_fogo.html"><button class="tablinks" onclick="openCity(event, 'Paris')">2° A menina que brincava com fogo</button></a>
+        <a href="./Rainha_castelo_ar.html"><button class="tablinks" onclick="openCity(event, 'Tokyo')">3° A rainha do castelo de ar</button></a>
+        <a href="./Garota_teia_aranha.html"><button class="tablinks" onclick="openCity(event, 'London')">4° A garota na teia de aranha</button></a>
+        <a href="./Homem_buscava_sombra.html"><button class="tablinks" onclick="openCity(event, 'London')">5° O homem que buscava sua sombra</button></a>
+        <a href="./Garota_marcada_morrer.html"><button class="tablinks" onclick="openCity(event, 'Paris')">6° A garota marcada para morrer </button></a>
+    </div>
+    <script src="Progresso.js"></script>
+
+</body>
+</html>

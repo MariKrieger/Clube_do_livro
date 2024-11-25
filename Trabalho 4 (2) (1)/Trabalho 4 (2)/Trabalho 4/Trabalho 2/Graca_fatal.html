@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Progresso de leitura</title>
+<link rel="stylesheet" href="Progress7.css">
+</head>
+<body>
+    <header>
+        <a href="./Interface.html"><img src="C.jpg" class="Logo"></a>
+        <h1 class="titulo">BOOK CLUB</h1>
+        <ul class="menu">
+            <li class="Monica">Clubes
+                <ul>
+                    <a href="./Inicial.html" class="TESTE"><li>Clubes públicos</li></a>
+                    <a href="./Clube.html" class="TESTE"><li>Clubes privados</li></a>
+                    <a href="./Crie.html" class="TESTE"><li>Criar um clube</li></a>
+                </ul>
+            </li>
+            <li class="Rachel">Livros
+                <ul>
+                    <li><a href="./Acao.html" class="TESTE">Ação</a></li>
+                    <li><a href="./Aventura.html" class="TESTE">Aventura</a></li>
+                    <li><a href="./Distopia.html" class="TESTE">Distopia</a></li>
+                    <li><a href="./Drama.html" class="TESTE">Drama</a></li>
+                    <li><a href="./Fantasia.html" class="TESTE">Fantasia</a></li>
+                    <li><a href="./Ficcao.html" class="TESTE">Ficção</a></li>
+                    <li><a href="./Investigacao.html" class="TESTE">Investigação</a></li>
+                    <li><a href="./Poesia.html" class="TESTE">Poesia</a></li>
+                    <li><a href="./Romance.html" class="TESTE">Romance</a></li>
+                    <li><a href="./Suspense.html" class="TESTE">Suspense</a></li>
+                    <li><a href="./Terror.html" class="TESTE">Terror</a></li>
+                </ul>
+            </li>
+            <li class="Phoebe">Extras
+                <ul>
+                    <a href="./Resenhas.html" class="TESTE"><li>Resenhas</li></a>
+                    <a href="./Timer.html" class="TESTE"><li>Timer</li></a>
+                    <a href="./Metas_desafios.html" class="TESTE"><li>Metas e desafios</li></a>
+                </ul>
+            </li>
+        </ul>
+    </header>
+<main>
+<div class="main-container">
+    <div class="container">
+        <img src="147.jpg" alt="Capa do Livro" class="book-cover">
+        <div class="book-info">
+            <h2>Graça fatal</h2>
+            <p>Louise Penny</p>
+            <div class="stars" id="rating-stars">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label for="pages">Páginas Lidas</label>
+            <input type="number" id="pages" min="0" max="473" value="60">
+        </div>
+
+        <div class="input-group">
+            <label for="start-date">Começou a ler em</label>
+            <input type="date" id="start-date" value="2024-10-31">
+        </div>
+
+        <div class="input-group">
+            <label for="end-date">Terminou de ler em</label>
+            <input type="date" id="end-date">
+        </div>
+
+        <div class="input-group">
+            <label for="shelf">Prateleira</label>
+            <select id="shelf">
+                <option value="reading">Lendo</option>
+                <option value="to-read">Quero ler</option>
+                <option value="read">Lido</option>
+            </select>
+        </div>
+        <button class="save-button" onclick="saveData()">SALVAR</button>
+    </div>
+
+    <div class="empty-container">
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="#e4c7c3" class="bi bi-file-text-fill" viewBox="0 0 16 16">
+            <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M5 4h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1m-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5M5 8h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1m0 2h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1"/>
+        </svg>
+        <h2 class="Beauty">Sinopse</h2>
+        <p class="Beast">Ninguém gostava de CC de Poitiers: nem o marido patético, nem a filha apática e muito menos os moradores de Three Pines. Ela conseguiu se indispor com todos à sua volta até o dia em que foi morta. O inspetor-chefe Armand Gamache, uma lenda na polícia do Quebec, é chamado de volta ao vilarejo para investigar esse novo homicídio. Ele logo percebe que está lidando com um crime quase impossível: CC foi eletrocutada no meio de um lago congelado, na frente de toda a cidade, durante um torneio esportivo local. E ninguém parece ter visto algo que ajude a esclarecer o caso. Quem teria sido insano o suficiente para tentar algo tão arriscado e macabro – e brilhante o suficiente para conseguir executar o plano? Com seu estilo compassivo e observador, Gamache escava sob a superfície idílica da comunidade para descobrir segredos perigosos há muito enterrados, enquanto fantasmas do próprio passado ameaçam voltar para assombrá-lo. 
+            </p>
+    </div>
+    <div class="tab">
+        <a href="./Natureza_morta.html"><button class="tablinks" onclick="openCity(event, 'London')">1° Natureza-morta</button></a>
+        <a href="./Graca_fatal.html"><button class="tablinks" onclick="openCity(event, 'Paris')">2° Graça fatal</button></a>
+        <a href="./O_mais_cruel_dos_meses.html"><button class="tablinks" onclick="openCity(event, 'Tokyo')">3° Os mais cruel dos meses</button></a>
+        <a href="./E_proibido_matar.html"><button class="tablinks" onclick="openCity(event, 'London')">4° É proibido matar</button></a>
+        <a href="./Revelacao_brutal.html"><button class="tablinks" onclick="openCity(event, 'London')">5° Revelação brutal</button></a>
+        <a href="./Enterre_seus_mortos.html"><button class="tablinks" onclick="openCity(event, 'Paris')">6° Enterre seus mortos</button></a>
+        <a href="./Um_truque_de_luz.html"><button class="tablinks" onclick="openCity(event, 'Tokyo')">7° Um truque de luz</button></a>
+    </div>
+    <script src="Progresso.js"></script>
+
+</body>
+</html>

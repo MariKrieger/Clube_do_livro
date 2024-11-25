@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Progresso de leitura</title>
+<link rel="stylesheet" href="Progress2.css">
+</head>
+<body>
+    <header>
+        <a href="./Interface.html"><img src="C.jpg" class="Logo"></a>
+        <h1 class="titulo">BOOK CLUB</h1>
+        <ul class="menu">
+            <li class="Monica">Clubes
+                <ul>
+                    <li>Clubes públicos</li>
+                    <li>Clubes privados</li>
+                    <li>Criar um clube</li>
+                </ul>
+            </li>
+            <li class="Rachel">Livros
+                <ul>
+                    <li><a href="./Acao.html" class="TESTE">Ação</a></li>
+                    <li><a href="./Aventura.html" class="TESTE">Aventura</a></li>
+                    <li><a href="./Distopia.html" class="TESTE">Distopia</a></li>
+                    <li><a href="./Drama.html" class="TESTE">Drama</a></li>
+                    <li><a href="./Fantasia.html" class="TESTE">Fantasia</a></li>
+                    <li><a href="./Ficcao.html" class="TESTE">Ficção</a></li>
+                    <li><a href="./Investigacao.html" class="TESTE">Investigação</a></li>
+                    <li><a href="./Poesia.html" class="TESTE">Poesia</a></li>
+                    <li><a href="./Romance.html" class="TESTE">Romance</a></li>
+                    <li><a href="./Suspense.html" class="TESTE">Suspense</a></li>
+                    <li><a href="./Terror.html" class="TESTE">Terror</a></li>
+                </ul>
+            </li>
+            <li class="Phoebe">Extras
+                <ul>
+                    <li>Resenhas</li>
+                    <li>Timer</li>
+                    <li>Metas e desafios</li>
+                </ul>
+            </li>
+    </header>
+<main>
+<div class="main-container">
+    <div class="container">
+        <img src="5.jpg" alt="Capa do Livro" class="book-cover">
+        <div class="book-info">
+            <h2>Destruidor de mundos</h2>
+            <p>Victoria Aveyard</p>
+            <div class="stars" id="rating-stars">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label for="pages">Páginas Lidas</label>
+            <input type="number" id="pages" min="0" max="473" value="60">
+        </div>
+
+        <div class="input-group">
+            <label for="start-date">Começou a ler em</label>
+            <input type="date" id="start-date" value="2024-10-31">
+        </div>
+
+        <div class="input-group">
+            <label for="end-date">Terminou de ler em</label>
+            <input type="date" id="end-date">
+        </div>
+
+        <div class="input-group">
+            <label for="shelf">Prateleira</label>
+            <select id="shelf">
+                <option value="reading">Lendo</option>
+                <option value="to-read">Quero ler</option>
+                <option value="read">Lido</option>
+            </select>
+        </div>
+        <button class="save-button" onclick="saveData()">SALVAR</button>
+    </div>
+
+    <div class="empty-container">
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="#e4c7c3" class="bi bi-file-text-fill" viewBox="0 0 16 16">
+            <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M5 4h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1m-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5M5 8h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1m0 2h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1"/>
+        </svg>
+        <h2 class="Beauty">Sinopse</h2>
+        <p class="Beast">Ano após ano, Corayne assiste sua mãe, uma célebre pirata, partir para o alto-mar e desbravar todos os reinos de Todala, sem jamais poder acompanhá-la. Quando um misterioso imortal e uma assassina de aluguel aparecem dizendo que ela é a última descendente viva de uma poderosa linhagem ― e a única pessoa capaz de salvar o mundo de um perigo iminente ―, ela aproveita a chance para ir em busca de sua própria aventura.
+            O problema é que o perigo é muito maior do que ela imaginava: um homem sedento por poder, determinado a reabrir os portais que, no passado, levavam para outros mundos, povoados por criaturas sinistras. Com a ajuda de um grupo de bandidos e maltrapilhos, Corayne terá de provar que o heroísmo pode surgir até nos lugares mais inesperados.</p>
+    </div>
+    <div class="tab">
+        <a href="./Destruidor_de_mundos.html"><button class="tablinks" onclick="openCity(event, 'London')">1° Destruidor de mundos</button></a>
+        <a href="./Destruidor_de_espadas.html"><button class="tablinks" onclick="openCity(event, 'Paris')">2° Destruidor de espadas</button></a>
+    </div>
+
+</div>
+
+<script src="Progresso.js"></script>
+</main>
+</body>
+</html>

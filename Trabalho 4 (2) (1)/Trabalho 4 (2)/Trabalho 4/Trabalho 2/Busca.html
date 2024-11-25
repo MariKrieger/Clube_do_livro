@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terror</title>
+    <link rel="stylesheet" href="Padrao.css">
+    <style>
+        /* CSS para estilizar a busca e a lista de livros */
+        .search-container {
+            margin: 20px 0;
+        }
+
+        #searchInput {
+            padding: 10px;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        #bookList {
+            margin-top: 20px;
+        }
+
+        .book-item {
+            margin: 5px 0;
+            display: block; /* Para garantir que cada item seja exibido como bloco */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="./Interface.html"><img src="C.jpg" class="Logo"></a>
+        <h1 class="titulo">BOOK CLUB</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Buscar livros..." onkeyup="filterBooks()">
+        </div>
+        <ul class="menu">
+            <li class="Monica">Clubes
+                <ul>
+                    <li>Clubes públicos</li>
+                    <li>Clubes privados</li>
+                    <li>Criar um clube</li>
+                </ul>
+            </li>
+            <li class="Rachel">Livros
+                <ul>
+                    <!-- Seus links para livros -->
+                </ul>
+            </li>
+            <li class="Phoebe">Extras
+                <ul>
+                    <li>Resenhas</li>
+                    <li>Timer</li>
+                    <li>Metas e desafios</li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <h2 class="Flower">Terror</h2>
+        <p class="Power">O gênero literário terror, frequentemente confundido com horror...</p>
+
+        <!-- Lista de livros -->
+        <div id="bookList">
+            <div class="book-item">O Cemitério - Stephen King</div>
+            <div class="book-item">O Colecionador - John Fowles</div>
+            <div class="book-item">O Vilarejo - Raphael Montes</div>
+            <div class="book-item">Saboroso Cadáver - Agustina Bazterrica</div>
+            <div class="book-item">O Bebê de Rosemary - Ira Levin</div>
+            <div class="book-item">Entre Quatro Paredes - B.A. Paris</div>
+            <div class="book-item">O Exorcista - William Peter Blatty</div>
+            <!-- Adicione mais livros conforme necessário -->
+        </div>
+
+    </main>
+
+    <!-- JavaScript para filtrar os livros -->
+    <script>
+        function filterBooks() {
+            const input = document.getElementById('searchInput');
+            const filter = input.value.toLowerCase(); // Converte o texto para minúsculas
+            const bookList = document.getElementById('bookList');
+            const books = bookList.getElementsByClassName('book-item');
+
+            // Loop através de todos os itens da lista de livros
+            for (let i = 0; i < books.length; i++) {
+                const book = books[i];
+                const textValue = book.textContent || book.innerText; // Obtém o texto do livro
+
+                // Verifica se o texto do livro contém o valor do input
+                if (textValue.toLowerCase().includes(filter)) {
+                    book.style.display = ""; // Mostra o livro se corresponder
+                } else {
+                    book.style.display = "none"; // Esconde o livro se não corresponder
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>

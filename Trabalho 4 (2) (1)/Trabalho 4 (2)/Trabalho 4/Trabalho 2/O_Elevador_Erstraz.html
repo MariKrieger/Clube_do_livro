@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Progresso de leitura</title>
+<link rel="stylesheet" href="Progress.css">
+</head>
+<body>
+    <header>
+        <a href="./Interface.html"><img src="C.jpg" class="Logo"></a>
+        <h1 class="titulo">BOOK CLUB</h1>
+        <ul class="menu">
+            <li class="Monica">Clubes
+                <ul>
+                    <li>Clubes públicos</li>
+                    <li>Clubes privados</li>
+                    <li>Criar um clube</li>
+                </ul>
+            </li>
+            <li class="Rachel">Livros
+                <ul>
+                    <li><a href="./Acao.html" class="TESTE">Ação</a></li>
+                    <li><a href="./Aventura.html" class="TESTE">Aventura</a></li>
+                    <li><a href="./Distopia.html" class="TESTE">Distopia</a></li>
+                    <li><a href="./Drama.html" class="TESTE">Drama</a></li>
+                    <li><a href="./Fantasia.html" class="TESTE">Fantasia</a></li>
+                    <li><a href="./Ficcao.html" class="TESTE">Ficção</a></li>
+                    <li><a href="./Investigacao.html" class="TESTE">Investigação</a></li>
+                    <li><a href="./Poesia.html" class="TESTE">Poesia</a></li>
+                    <li><a href="./Romance.html" class="TESTE">Romance</a></li>
+                    <li><a href="./Suspense.html" class="TESTE">Suspense</a></li>
+                    <li><a href="./Terror.html" class="TESTE">Terror</a></li>
+                </ul>
+            </li>
+            <li class="Phoebe">Extras
+                <ul>
+                    <li>Resenhas</li>
+                    <li>Timer</li>
+                    <li>Metas e desafios</li>
+                </ul>
+            </li>
+    </header>
+<main>
+<div class="main-container">
+    <div class="container">
+        <img src="29.jpg" alt="Capa do Livro" class="book-cover">
+        <div class="book-info">
+            <h2>O Elevador Erstraz</h2>
+            <p>Lemony Snicket</p>
+            <div class="stars" id="rating-stars">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label for="pages">Páginas Lidas</label>
+            <input type="number" id="pages" min="0" max="473" value="60">
+        </div>
+
+        <div class="input-group">
+            <label for="start-date">Começou a ler em</label>
+            <input type="date" id="start-date" value="2024-10-31">
+        </div>
+
+        <div class="input-group">
+            <label for="end-date">Terminou de ler em</label>
+            <input type="date" id="end-date">
+        </div>
+
+        <div class="input-group">
+            <label for="shelf">Prateleira</label>
+            <select id="shelf">
+                <option value="reading">Lendo</option>
+                <option value="to-read">Quero ler</option>
+                <option value="read">Lido</option>
+            </select>
+        </div>
+        <button class="save-button" onclick="saveData()">SALVAR</button>
+    </div>
+
+    <div class="empty-container">
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="#e4c7c3" class="bi bi-file-text-fill" viewBox="0 0 16 16">
+            <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M5 4h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1m-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5M5 8h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1m0 2h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1"/>
+          </svg>
+        <h2 class="Beauty">Sinopse</h2>
+        <p class="Beast">Jerome e Esmé Squalor moram num apartamento de cobertura na Avenida Sombria. Para o desânimo dos três irmãos, o elevador do prédio foi desligado e eles são obrigados a chegar ao último andar pelas escadas escuras e tenebrosas. Depois de muitos e muitos degraus, eles finalmente chegam à casa nova, um enorme apartamento com 71 quartos, e descobrem que seus novos pais os tinham adotado apenas porque ter órfãos estava na moda.Os irmãos parecem bem instalados, mas uma nova aparição do Conde Olaf vem trazer pavor aos Baudelaire. Eles agora têm de descobrir um jeito de se livrar dessa pérfida ameaça. A resposta pode estar no elevador ersatz, uma passagem secreta tão escura quanto "uma pantera negra como azeviche, coberta de piche, comendo alcaçuz preto no ponto mais profundo da parte mais funda do Mar Negro". E os perigos estão só começando. Dali em diante, uma montanha de horrores e desgostos ainda espera pelos desafortunados irmãos Baudelaire.  
+            </p>
+    </div>
+</div>
+
+<script>
+    const stars = document.querySelectorAll('.star');
+    let currentRating = 0; 
+
+    function updateStars(rating) {
+        stars.forEach(star => {
+            if (parseInt(star.getAttribute('data-value')) <= rating) {
+                star.classList.add('filled');
+            } else {
+                star.classList.remove('filled');
+            }
+        });
+    }
+
+    stars.forEach(star => {
+        star.addEventListener('click', function() {
+            currentRating = parseInt(this.getAttribute('data-value'));
+            updateStars(currentRating);
+        });
+
+        
+        star.addEventListener('mouseover', function() {
+            const rating = parseInt(this.getAttribute('data-value'));
+            updateStars(rating);
+        });
+
+       
+        star.addEventListener('mouseout', function() {
+            updateStars(currentRating);
+        });
+    });
+
+    
+    function saveData() {
+        const pages = document.getElementById('pages').value;
+        const startDate = document.getElementById('start-date').value;
+        const endDate = document.getElementById('end-date').value;
+        const shelf = document.getElementById('shelf').value;
+        const tags = document.getElementById('tags').value;
+
+        console.log('Páginas Lidas:', pages);
+        console.log('Começou a ler em:', startDate);
+        console.log('Terminou de ler em:', endDate);
+        console.log('Prateleira:', shelf);
+        console.log('Etiquetas:', tags);
+        console.log('Avaliação:', currentRating);
+
+        alert('Informações salvas com sucesso!');
+    }
+</script>
+
+</body>
+</html>

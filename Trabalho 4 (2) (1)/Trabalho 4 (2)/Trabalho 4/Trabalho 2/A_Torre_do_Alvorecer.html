@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Progresso de leitura</title>
+<link rel="stylesheet" href="Progress.css">
+</head>
+<body>
+
+<div class="main-container">
+    <div class="container">
+        <img src="85.jpg" alt="Capa do Livro" class="book-cover">
+        <div class="book-info">
+            <h2>A Torre do Alvorecer</h2>
+            <p>Sarah J. Maas</p>
+            <div class="stars" id="rating-stars">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label for="pages">Páginas Lidas</label>
+            <input type="number" id="pages" min="0" max="473" value="60">
+        </div>
+
+        <div class="input-group">
+            <label for="start-date">Começou a ler em</label>
+            <input type="date" id="start-date" value="2024-10-31">
+        </div>
+
+        <div class="input-group">
+            <label for="end-date">Terminou de ler em</label>
+            <input type="date" id="end-date">
+        </div>
+
+        <div class="input-group">
+            <label for="shelf">Prateleira</label>
+            <select id="shelf">
+                <option value="reading">Lendo</option>
+                <option value="to-read">Quero ler</option>
+                <option value="read">Lido</option>
+            </select>
+        </div>
+        <button class="save-button" onclick="saveData()">SALVAR</button>
+    </div>
+
+    <div class="empty-container">
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="#e4c7c3" class="bi bi-file-text-fill" viewBox="0 0 16 16">
+            <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M5 4h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1m-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5M5 8h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1m0 2h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1"/>
+          </svg>
+        <h2 class="Beauty">Sinopse</h2>
+        <p class="Beast">Chaol Westfall sempre se definiu por sua lealdade inquebrável, sua força e sua posição como capitão da Guarda. Mas tudo isso mudou desde que o Castelo de Vidro se quebrou; seus homens foram abatidos, e o rei de Adarlan o poupou de um golpe de morte, mas deixou seu corpo quebrado. Ele foi despedaçado emocionalmente, enlouquecendo pela culpa que sentia por decepcionar a si mesmo e a seus homens. Agora, enfraquecido se senta em uma cadeira, um recipiente para seu espírito profundamente combalido. Sua única chance de recuperação reside nos lendários curandeiros da Torre Cesme em Antica - a fortaleza do poderoso império do continente do sul. E é para lá que ruma Chaol, acompanhado de Nesryn, a única mulher na Guarda Real e sua nova capitã, depois de ter sido nomeado Mão do Rei. Então, eles viajam para Antica, na esperança de que os lendários curandeiros da Torre Cesme curem seu corpo. Eles também esperam fazer aliados do império sul na iminente guerra. Com a guerra se aproximando de Dorian e com Aelin lutando por seu trono de direito, Chaol pode ser uma peça-chave para a sobrevivência dos dois jovens monarcas, convencendo outros governantes a se aliarem a eles. 
+            </p>
+    </div>
+</div>
+
+<script>
+    const stars = document.querySelectorAll('.star');
+    let currentRating = 0; 
+
+    function updateStars(rating) {
+        stars.forEach(star => {
+            if (parseInt(star.getAttribute('data-value')) <= rating) {
+                star.classList.add('filled');
+            } else {
+                star.classList.remove('filled');
+            }
+        });
+    }
+
+    stars.forEach(star => {
+        star.addEventListener('click', function() {
+            currentRating = parseInt(this.getAttribute('data-value'));
+            updateStars(currentRating);
+        });
+
+        
+        star.addEventListener('mouseover', function() {
+            const rating = parseInt(this.getAttribute('data-value'));
+            updateStars(rating);
+        });
+
+       
+        star.addEventListener('mouseout', function() {
+            updateStars(currentRating);
+        });
+    });
+
+    
+    function saveData() {
+        const pages = document.getElementById('pages').value;
+        const startDate = document.getElementById('start-date').value;
+        const endDate = document.getElementById('end-date').value;
+        const shelf = document.getElementById('shelf').value;
+        const tags = document.getElementById('tags').value;
+
+        console.log('Páginas Lidas:', pages);
+        console.log('Começou a ler em:', startDate);
+        console.log('Terminou de ler em:', endDate);
+        console.log('Prateleira:', shelf);
+        console.log('Etiquetas:', tags);
+        console.log('Avaliação:', currentRating);
+
+        alert('Informações salvas com sucesso!');
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Progresso de leitura</title>
+<link rel="stylesheet" href="Progress.css">
+</head>
+<body>
+    <header>
+        <a href="./Interface.html"><img src="C.jpg" class="Logo"></a>
+        <h1 class="titulo">BOOK CLUB</h1>
+        <ul class="menu">
+            <li class="Monica">Clubes
+                <ul>
+                    <a href="./Inicial.html" class="TESTE"><li>Clubes públicos</li></a>
+                    <a href="./Clube.html" class="TESTE"><li>Clubes privados</li></a>
+                    <a href="./Crie.html" class="TESTE"><li>Criar um clube</li></a>
+                </ul>
+            </li>
+            <li class="Rachel">Livros
+                <ul>
+                    <li><a href="./Acao.html" class="TESTE">Ação</a></li>
+                    <li><a href="./Aventura.html" class="TESTE">Aventura</a></li>
+                    <li><a href="./Distopia.html" class="TESTE">Distopia</a></li>
+                    <li><a href="./Drama.html" class="TESTE">Drama</a></li>
+                    <li><a href="./Fantasia.html" class="TESTE">Fantasia</a></li>
+                    <li><a href="./Ficcao.html" class="TESTE">Ficção</a></li>
+                    <li><a href="./Investigacao.html" class="TESTE">Investigação</a></li>
+                    <li><a href="./Poesia.html" class="TESTE">Poesia</a></li>
+                    <li><a href="./Romance.html" class="TESTE">Romance</a></li>
+                    <li><a href="./Suspense.html" class="TESTE">Suspense</a></li>
+                    <li><a href="./Terror.html" class="TESTE">Terror</a></li>
+                </ul>
+            </li>
+            <li class="Phoebe">Extras
+                <ul>
+                    <a href="./Resenhas.html" class="TESTE"><li>Resenhas</li></a>
+                    <a href="./Timer.html" class="TESTE"><li>Timer</li></a>
+                    <a href="./Metas_desafios.html" class="TESTE"><li>Metas e desafios</li></a>
+                </ul>
+            </li>
+        </ul>
+    </header>
+<main>
+<div class="main-container">
+    <div class="container">
+        <img src="37.jpg" alt="Capa do Livro" class="book-cover">
+        <div class="book-info">
+            <h2>Os Goonies</h2>
+            <p>James Kahn</p>
+            <div class="stars" id="rating-stars">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label for="pages">Páginas Lidas</label>
+            <input type="number" id="pages" min="0" max="473" value="60">
+        </div>
+
+        <div class="input-group">
+            <label for="start-date">Começou a ler em</label>
+            <input type="date" id="start-date" value="2024-10-31">
+        </div>
+
+        <div class="input-group">
+            <label for="end-date">Terminou de ler em</label>
+            <input type="date" id="end-date">
+        </div>
+
+        <div class="input-group">
+            <label for="shelf">Prateleira</label>
+            <select id="shelf">
+                <option value="reading">Lendo</option>
+                <option value="to-read">Quero ler</option>
+                <option value="read">Lido</option>
+            </select>
+        </div>
+        <button class="save-button" onclick="saveData()">SALVAR</button>
+    </div>
+
+    <div class="empty-container">
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="#e4c7c3" class="bi bi-file-text-fill" viewBox="0 0 16 16">
+            <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M5 4h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1m-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5M5 8h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1m0 2h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1"/>
+          </svg>
+        <h2 class="Beauty">Sinopse</h2>
+        <p class="Beast">O livro retrata a vida de amigos adolescentes que vivem com suas famílias nas docas Goon, e que por esta razão se auto-denominam Goonies. Mikey (quem narra a história) e todas as famílias serão obrigados a deixar suas casas para a construção de um campo de golfe.
+            Ao encontrar um suposto mapa do tesouro, Mikey e seus amigos partem em uma aventura incrível, na esperança de conquistar a quantia de dinheiro suficiente para cobrir a oferta pelas terras onde vivem. Entretanto, o grupo não esperava encontrar pelo caminho armadilhas subterrâneas, uma quadrilha de falsários, esqueletos armados, dentre outros obstáculos que fizeram desta história uma aventura perigosa e emocionante.
+            </p>
+    </div>
+</div>
+
+<script>
+    const stars = document.querySelectorAll('.star');
+    let currentRating = 0; 
+
+    function updateStars(rating) {
+        stars.forEach(star => {
+            if (parseInt(star.getAttribute('data-value')) <= rating) {
+                star.classList.add('filled');
+            } else {
+                star.classList.remove('filled');
+            }
+        });
+    }
+
+    stars.forEach(star => {
+        star.addEventListener('click', function() {
+            currentRating = parseInt(this.getAttribute('data-value'));
+            updateStars(currentRating);
+        });
+
+        
+        star.addEventListener('mouseover', function() {
+            const rating = parseInt(this.getAttribute('data-value'));
+            updateStars(rating);
+        });
+
+       
+        star.addEventListener('mouseout', function() {
+            updateStars(currentRating);
+        });
+    });
+
+    
+    function saveData() {
+        const pages = document.getElementById('pages').value;
+        const startDate = document.getElementById('start-date').value;
+        const endDate = document.getElementById('end-date').value;
+        const shelf = document.getElementById('shelf').value;
+        const tags = document.getElementById('tags').value;
+
+        console.log('Páginas Lidas:', pages);
+        console.log('Começou a ler em:', startDate);
+        console.log('Terminou de ler em:', endDate);
+        console.log('Prateleira:', shelf);
+        console.log('Etiquetas:', tags);
+        console.log('Avaliação:', currentRating);
+
+        alert('Informações salvas com sucesso!');
+    }
+
+    function openCity(evt, cityName) {
+       
+        var i, tabcontent, tablinks;
+      
+      
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+      
+    
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+      
+        
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+</script>
+
+</body>
+</html>

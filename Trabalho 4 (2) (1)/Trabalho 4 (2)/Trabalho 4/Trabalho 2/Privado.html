@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clube público</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="C.jpg" class="Logo">
+        <h1 class="titulo">BOOK CLUB</h1>
+        <ul class="menu">
+            <li class="Monica">Clubes
+                <ul>
+                    <li>Clubes públicos</li>
+                    <li>Clubes privados</li>
+                    <li>Criar um clube</li>
+                </ul>
+            </li>
+            <li class="Rachel">Livros
+                <ul>
+                    <li><a href="" class="TESTE">Ação</a></li>
+                    <li><a href="" class="TESTE">Aventura</a></li>
+                    <li><a href="" class="TESTE">Autoajuda</a></li>
+                    <li><a href="" class="TESTE">Biografia</a></li>
+                    <li><a href="" class="TESTE">Distopia</a></li>
+                    <li><a href="" class="TESTE">Drama</a></li>
+                    <li><a href="" class="TESTE">Fantasia</a></li>
+                    <li><a href="" class="TESTE">Ficção</a></li>
+                    <li><a href="" class="TESTE">Investigação</a></li>
+                    <li><a href="" class="TESTE">Poesia</a></li>
+                    <li><a href="" class="TESTE">Romance</a></li>
+                    <li><a href="" class="TESTE">Suspense</a></li>
+                    <li><a href="" class="TESTE">Terror</a></li>
+                </ul>
+            </li>
+            <li class="Phoebe">Extras
+                <ul>
+                    <li>Resenhas</li>
+                    <li>Timer</li>
+                    <li>Metas e desafios</li>
+                </ul>
+            </li>
+    </header>
+<div class="container">
+    <!-- Sidebar e Chat -->
+    <div class="sidebar">
+    <h2>Canais</h2>
+    <ul>
+        <li onclick="switchChannel('geral')"># geral</li>
+        <li onclick="switchChannel('livros')"># livros</li>
+        <li onclick="switchChannel('desafios')"># desafios</li>
+    </ul>
+    </div>
+    <div class="chat">
+      <div class="chat-header">
+        <h2 id="channel-name"># geral</h2>
+      </div>
+      <div class="chat-messages" id="chat-messages">
+        <!-- Mensagens por canal -->
+        <div class="channel-messages" id="geral">
+          <p><span class="user">Cealena.kill123:</span> Olá a todos!</p>
+        </div>
+        <div class="channel-messages" id="livros" style="display: none;">
+          <p><span class="user">Kenji_friend.098:</span> Alguém leu o último livro do clube?</p>
+        </div>
+        <div class="channel-messages" id="desafios" style="display: none;">
+          <p><span class="user">Miss_Lake:</span> Vamos começar um novo desafio?</p>
+        </div>
+      </div>
+      <div class="chat-input">
+        <input type="text" id="messageInput" placeholder="Digite uma mensagem..." />
+        <button onclick="sendMessage()">Enviar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

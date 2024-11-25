@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interface de Leitura</title>
+<link rel="stylesheet" href="Progress.css">
+</head>
+<body>
+
+<div class="container">
+    <img src="A_hipotese_do_amor.jpg" alt="Capa do Livro" class="book-cover">
+    <div class="book-info">
+        <h2>A Hipótese do Amor</h2>
+        <p>Ali Hazelwood</p>
+        <div class="stars" id="rating-stars">
+            <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
+        </div>
+    </div>
+
+    <div class="input-group">
+        <label for="pages">Páginas Lidas</label>
+        <input type="number" id="pages" min="0" max="473" value="60">
+    </div>
+
+    <div class="input-group">
+        <label for="start-date">Começou a ler em</label>
+        <input type="date" id="start-date" value="2024-10-31">
+    </div>
+
+    <div class="input-group">
+        <label for="end-date">Terminou de ler em</label>
+        <input type="date" id="end-date">
+    </div>
+
+    <div class="input-group">
+        <label for="shelf">Prateleira</label>
+        <select id="shelf">
+            <option value="reading">Lendo</option>
+            <option value="to-read">Quero ler</option>
+            <option value="read">Lido</option>
+        </select>
+    </div>
+
+    <div class="input-group">
+        <label for="tags">Etiquetas</label>
+        <input type="text" id="tags" placeholder="Digite etiquetas">
+    </div>
+
+    <button class="save-button" onclick="saveData()">SALVAR</button>
+</div>
+
+<script>
+    // Função para gerenciar a interação das estrelas
+    const stars = document.querySelectorAll('.star');
+    let currentRating = 0; // Avaliação inicial
+
+    function updateStars(rating) {
+        stars.forEach(star => {
+            if (parseInt(star.getAttribute('data-value')) <= rating) {
+                star.classList.add('filled');
+            } else {
+                star.classList.remove('filled');
+            }
+        });
+    }
+
+    // Event listeners para clicar nas estrelas
+    stars.forEach(star => {
+        star.addEventListener('click', function() {
+            currentRating = parseInt(this.getAttribute('data-value'));
+            updateStars(currentRating);
+        });
+
+        // Event listeners para alterar a avaliação ao passar o mouse
+        star.addEventListener('mouseover', function() {
+            const rating = parseInt(this.getAttribute('data-value'));
+            updateStars(rating);
+        });
+
+        // Remover o efeito de hover quando o mouse sair
+        star.addEventListener('mouseout', function() {
+            updateStars(currentRating);
+        });
+    });
+
+    // Função para salvar as informações
+    function saveData() {
+        const pages = document.getElementById('pages').value;
+        const startDate = document.getElementById('start-date').value;
+        const endDate = document.getElementById('end-date').value;
+        const shelf = document.getElementById('shelf').value;
+        const tags = document.getElementById('tags').value;
+
+        console.log('Páginas Lidas:', pages);
+        console.log('Começou a ler em:', startDate);
+        console.log('Terminou de ler em:', endDate);
+        console.log('Prateleira:', shelf);
+        console.log('Etiquetas:', tags);
+        console.log('Avaliação:', currentRating);
+
+        alert('Informações salvas com sucesso!');
+    }
+</script>
+
+</body>
+</html>
+
+  

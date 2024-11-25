@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Progresso de leitura</title>
+<link rel="stylesheet" href="Progress.css">
+</head>
+<body>
+
+<div class="main-container">
+    <div class="container">
+        <img src="Facil_matar.jpg" alt="Capa do Livro" class="book-cover">
+        <div class="book-info">
+            <h2>É Fácil Matar</h2>
+            <p>Agatha Christie</p>
+            <div class="stars" id="rating-stars">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label for="pages">Páginas Lidas</label>
+            <input type="number" id="pages" min="0" max="473" value="60">
+        </div>
+
+        <div class="input-group">
+            <label for="start-date">Começou a ler em</label>
+            <input type="date" id="start-date" value="2024-10-31">
+        </div>
+
+        <div class="input-group">
+            <label for="end-date">Terminou de ler em</label>
+            <input type="date" id="end-date">
+        </div>
+
+        <div class="input-group">
+            <label for="shelf">Prateleira</label>
+            <select id="shelf">
+                <option value="reading">Lendo</option>
+                <option value="to-read">Quero ler</option>
+                <option value="read">Lido</option>
+            </select>
+        </div>
+        <button class="save-button" onclick="saveData()">SALVAR</button>
+    </div>
+
+    <div class="empty-container">
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="#e4c7c3" class="bi bi-file-text-fill" viewBox="0 0 16 16">
+            <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M5 4h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1m-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5M5 8h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1m0 2h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1"/>
+        </svg>
+        <h2 class="Beauty">Sinopse</h2>
+        <p class="Beast">Em um pacato vilarejo inglês, um assassino está prestes a atacar. Mais de uma vez. Mergulhe nesta investigação policial enquanto tentam capturar um serial killer, e seja surpreendido pelas revelações inesperadas em mais um clássico de Agatha Christie.
+
+            O policial Luke Fitzwilliam retorna à Grã-Bretanha depois de anos servindo no Oriente Médio para uma longa estadia. Em seu caminho para Londres, ele cruza com uma mulher que afirma ter um serial killer atuando em seu pequeno vilarejo, Wychwood. De início, Fitzwilliam não acredita nas declarações de Miss Pinkerton, mas, quando recebe a notícia de que sua companheira de viagem foi encontrada morta, decide dar uma chance à investigação. Então, o corpo de uma quarta vítima aparece, e todas as mortes parecem um acidente. Mas, como Fitzwilliam descobrirá, em Wychwood, nada é como parece…                       
+            </p>
+    </div>
+</div>
+
+<script>
+    const stars = document.querySelectorAll('.star');
+    let currentRating = 0; 
+
+    function updateStars(rating) {
+        stars.forEach(star => {
+            if (parseInt(star.getAttribute('data-value')) <= rating) {
+                star.classList.add('filled');
+            } else {
+                star.classList.remove('filled');
+            }
+        });
+    }
+
+    stars.forEach(star => {
+        star.addEventListener('click', function() {
+            currentRating = parseInt(this.getAttribute('data-value'));
+            updateStars(currentRating);
+        });
+
+        
+        star.addEventListener('mouseover', function() {
+            const rating = parseInt(this.getAttribute('data-value'));
+            updateStars(rating);
+        });
+
+       
+        star.addEventListener('mouseout', function() {
+            updateStars(currentRating);
+        });
+    });
+
+    
+    function saveData() {
+        const pages = document.getElementById('pages').value;
+        const startDate = document.getElementById('start-date').value;
+        const endDate = document.getElementById('end-date').value;
+        const shelf = document.getElementById('shelf').value;
+        const tags = document.getElementById('tags').value;
+
+        console.log('Páginas Lidas:', pages);
+        console.log('Começou a ler em:', startDate);
+        console.log('Terminou de ler em:', endDate);
+        console.log('Prateleira:', shelf);
+        console.log('Etiquetas:', tags);
+        console.log('Avaliação:', currentRating);
+
+        alert('Informações salvas com sucesso!');
+    }
+</script>
+
+</body>
+</html>

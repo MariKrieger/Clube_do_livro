@@ -1,60 +1,49 @@
-
 * {
     margin: 0;
     padding: 0;
-    max-width: 1270px;
     box-sizing: border-box;
 }
 
 body {
+    max-width: 1270px;
+    margin: 0 auto; 
     background-color: #FFF9F6;
+    font-family: Arial, sans-serif;
 }
-
 
 .Logo {
     width: 120px;
-    float: left;
-    margin-left: 30px;
     border-radius: 50%;
-    border-color: black;
 }
-
 
 header {
     height: 120px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; 
     background-color: #cbae99;
+    padding: 0 20px; 
     flex-wrap: wrap;
+    box-sizing: border-box;
 }
-
 
 .titulo {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     font-size: 30px;
-    text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    margin-left: 160px;
-    flex: 1 1 auto;
-    text-align: center;
-    
+    flex: 1;
+    text-align: center; 
+    margin: 0; 
 }
-
-.People {
-    margin-right: 20px;
-}
-
 
 .menu {
     list-style-type: none;
-    padding: 0;
-    margin-left: 50px;
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    gap: 20px; 
+    flex-wrap: wrap; 
+    justify-content: center;
 }
 
 .menu li {
@@ -86,7 +75,6 @@ header {
     background-color: #ddd;
 }
 
-
 .Monica, .Rachel, .Phoebe {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
@@ -96,10 +84,13 @@ header {
     letter-spacing: 1.5px;
 }
 
-
 .TESTE {
     text-decoration: none;
     color: black;
+}
+
+.People {
+    margin-right: 30px;
 }
 
 

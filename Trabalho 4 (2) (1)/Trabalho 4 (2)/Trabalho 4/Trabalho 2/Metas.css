@@ -1,28 +1,31 @@
 * {
+    max-width: 1280px;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-    max-width: 1240px;
-}
-
-.Logo {
+  }
+  
+  
+  header {
+    display: flex;
+    background-color: #cbae99;
+    color: white;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+  }
+  
+  
+  .Logo {
     width: 120px;
     float: left;
     margin-left: 30px;
     border-radius: 50%;
     border-color: black;
     }
-
-
-header {
-    height: 150px;
-    padding-top: 10px;
-    display: flex;
-    background-color: #cbae99;
-}
-
-.titulo {
+  
+  
+  .titulo {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     font-size: 40px;
@@ -31,14 +34,14 @@ header {
     text-transform: uppercase;
     letter-spacing: 1.5px;
     font-size: 30px;
-    padding-top: 60px;
-}
-
-.menu { 
+    padding-top: 40px;
+  }
+  
+  .menu { 
     margin-left: 50px;
-}
-
-.Monica, .Rachel, .Phoebe {
+  }
+  
+  .Monica, .Rachel, .Phoebe {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     font-size: 20px;
@@ -46,9 +49,61 @@ header {
     text-transform: uppercase;
     letter-spacing: 1.5px;
     font-size: .875rem;
-    padding-top: 65px;
-}
-
+    padding-top: 45px;
+  }
+  
+  
+  
+  .TESTE{
+    text-decoration: none;
+    color: black;
+  }
+  
+  .menu {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .menu li {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .menu li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+  
+  .menu li:hover ul {
+    display: block;
+  }
+  
+  .menu li ul li {
+    padding: 8px 12px;
+  }
+  
+  .menu li ul li:hover {
+    background-color: #ddd;
+  }
+  
+  .People {
+    margin-top: 35px;
+  }
+  
+  .header nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+  }
 
 body {
     background-color: #f0f0f0;

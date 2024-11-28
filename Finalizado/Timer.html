@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Club</title>
+    <link rel="stylesheet" href="Tempo.css">
+</head>
+<body>
+    <header>
+        <a href="./Interface.html"><img src="C.jpg" class="Logo"></a>
+        <h1 class="titulo">BOOK CLUB</h1>
+            <ul class="menu">
+                <li class="Monica">Clubes
+                    <ul>
+                        <li><a href="./Inicial.html" class="TESTE">Clubes públicos</a></li>
+                        <li><a href="./Clube.html" class="TESTE">Clubes privados</a></li>
+                        <li><a href="./Crie.html" class="TESTE">Crie um clube</a></li>
+                    </ul>
+                </li>
+                <li class="Rachel">Livros
+                    <ul>
+                        <li><a href="./Acao.html" class="TESTE">Ação</a></li>
+                        <li><a href="./Aventura.html" class="TESTE">Aventura</a></li>
+                        <li><a href="./Distopia.html" class="TESTE">Distopia</a></li>
+                        <li><a href="./Drama.html" class="TESTE">Drama</a></li>
+                        <li><a href="./Fantasia.html" class="TESTE">Fantasia</a></li>
+                        <li><a href="./Ficcao.html" class="TESTE">Ficção</a></li>
+                        <li><a href="./Investigacao.html" class="TESTE">Investigação</a></li>
+                        <li><a href="./Poesia.html" class="TESTE">Poesia</a></li>
+                        <li><a href="./Romance.html" class="TESTE">Romance</a></li>
+                        <li><a href="./Suspense.html" class="TESTE">Suspense</a></li>
+                        <li><a href="./Terror.html" class="TESTE">Terror</a></li>
+                    </ul>
+                </li>
+                <li class="Phoebe">Extras
+                    <ul>
+                        <li><a href="./Resenhas.html" class="TESTE">Resenhas</a></li>
+                        <li><a href="./Timer.html" class="TESTE">Timer</a></li>
+                        <li><a href="./Metas_desafios.html" class="TESTE">Metas e desafios</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="People">
+            <a href="./signup.html"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="black" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/></a></svg>
+        </div>
+    </header>
+    <main>
+        <section class="timer-container">
+            <div class="timer-header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" class="bi bi-stopwatch" viewBox="0 0 16 16">
+                    <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z"/>
+                    <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3"/>
+                </svg>
+                <div id="timer">
+                    <div class="time" id="hours">00</div>:<div class="time" id="minutes">00</div>:<div class="time" id="seconds">00</div>
+                </div>
+        
+                <button id="startButton">Iniciar</button>
+                <button id="pauseButton">Pausar</button>
+                <button id="stopButton">Parar</button>
+        
+                <h2>Salvar Histórico</h2>
+                <input type="text" id="bookTitle" placeholder="Título do Livro" required>
+                <input type="number" id="pagesRead" placeholder="Páginas Lidas" required>
+                <textarea id="comments" placeholder="Comentários"></textarea>
+                <button id="saveButton">Salvar Histórico</button>
+        
+                <h2>Histórico de Leitura</h2>
+                <ul id="historyList"></ul>
+            </div>
+        </section>    
+    </main>
+    <script src="Tempo.js"></script>
+</body>
+</html>

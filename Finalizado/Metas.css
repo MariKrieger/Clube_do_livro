@@ -1,0 +1,199 @@
+* {
+    max-width: 1280px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  header {
+    display: flex;
+    background-color: #cbae99;
+    color: white;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+  }
+  
+  
+  .Logo {
+    width: 120px;
+    float: left;
+    margin-left: 30px;
+    border-radius: 50%;
+    border-color: black;
+    }
+  
+  
+  .titulo {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 40px;
+    margin-left: 160px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 30px;
+    padding-top: 40px;
+  }
+  
+  .menu { 
+    margin-left: 50px;
+  }
+  
+  .Monica, .Rachel, .Phoebe {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: .875rem;
+    padding-top: 45px;
+  }
+  
+  
+  
+  .TESTE{
+    text-decoration: none;
+    color: black;
+  }
+  
+  .menu {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .menu li {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .menu li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+  
+  .menu li:hover ul {
+    display: block;
+  }
+  
+  .menu li ul li {
+    padding: 8px 12px;
+  }
+  
+  .menu li ul li:hover {
+    background-color: #ddd;
+  }
+  
+  .People {
+    margin-top: 35px;
+  }
+  
+  .header nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+body {
+    background-color: #f0f0f0;
+    letter-spacing: 2.5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.login-container {
+    display: inline-block;
+    height: 100%;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+.login-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 320px;
+}
+
+.login-box h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.menu li:hover ul {
+    display: block;
+}
+
+.menu li ul li {
+    padding: 8px 12px;
+}
+
+.menu li ul li:hover {
+    background-color: #ddd;
+}
+
+.Aia {
+    text-align: left;
+    letter-spacing: 2.5px;
+    margin-top: 10px;
+}
+
+p {
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem; 
+    }
+    input, button, textarea {
+        font-size: 0.9rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    input, button, textarea {
+        font-size: 0.8rem;
+        padding: 0.6rem; 
+    }
+}
+
+.TESTE{
+    text-decoration: none;
+    color: black;
+}

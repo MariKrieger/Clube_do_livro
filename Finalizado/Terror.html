@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terror</title>
+    <link rel="stylesheet" href="Padrao.css">
+</head>
+<body>
+    <header>
+        <a href="./Interface.html"><img src="C.jpg" class="Logo"></a>
+        <h1 class="titulo">BOOK CLUB</h1>
+        <div class="menu-container">
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu">
+                <li class="Monica">Clubes
+                    <ul>
+                        <li><a href="./Inicial.html" class="TESTE">Clubes públicos</a></li>
+                        <li><a href="./Clube.html" class="TESTE">Clubes privados</a></li>
+                        <li><a href="./Crie.html" class="TESTE">Crie um clube</a></li>
+                    </ul>
+                </li>
+                <li class="Rachel">Livros
+                    <ul>
+                        <li><a href="./Acao.html" class="TESTE">Ação</a></li>
+                        <li><a href="./Aventura.html" class="TESTE">Aventura</a></li>
+                        <li><a href="./Distopia.html" class="TESTE">Distopia</a></li>
+                        <li><a href="./Drama.html" class="TESTE">Drama</a></li>
+                        <li><a href="./Fantasia.html" class="TESTE">Fantasia</a></li>
+                        <li><a href="./Ficcao.html" class="TESTE">Ficção</a></li>
+                        <li><a href="./Investigacao.html" class="TESTE">Investigação</a></li>
+                        <li><a href="./Poesia.html" class="TESTE">Poesia</a></li>
+                        <li><a href="./Romance.html" class="TESTE">Romance</a></li>
+                        <li><a href="./Suspense.html" class="TESTE">Suspense</a></li>
+                        <li><a href="./Terror.html" class="TESTE">Terror</a></li>
+                    </ul>
+                </li>
+                <li class="Phoebe">Extras
+                    <ul>
+                        <li><a href="./Resenhas.html" class="TESTE">Resenhas</a></li>
+                        <li><a href="./Timer.html" class="TESTE">Timer</a></li>
+                        <li><a href="./Metas_desafios.html" class="TESTE">Metas e desafios</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Buscar livros..." onkeyup="filterBooks()">
+        </div>
+        <div class="People">
+            <a href="./signup.html"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="black" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/></a></svg>
+        </div>
+    </header>
+    
+    </div>
+    <h2 class="Flower">Terror</h2>
+    <p class="Power">O gênero literário terror, frequentemente confundido com horror, é caracterizado pela sua intenção de provocar medo e tensão nos leitores. Ele utiliza elementos sobrenaturais e situações de suspense para criar uma atmosfera que desafia as leis da natureza e explora os medos humanos mais profundos.</p>
+    <div id="bookList">
+    <div class="Rica">
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="202.jpg" class="image">
+        <div>
+            <a href="./O_cemiterio.html">
+            <button class="Tori">O Cemitério - Stephen King</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="203.jpg" class="image">
+        <div>
+            <a href="./O_colecionador.html">
+            <button class="Tori">O Colecionador - John Fowles</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="204.jpg" class="image">
+        <div>
+            <a href="./O_vilarejo.html">
+            <button class="Tori">O Vilarejo - Raphael Montes</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="205.jpg" class="image">
+        <div>
+            <a href="./Saboroso_cadaver.html">
+            <button class="Tori">Saboroso Cadáver - Agustina Bazterrica</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="206.jpg" class="image">
+        <div>
+            <a href="./O_bebe_de_Rosemary.html">
+            <button class="Tori">O Bebê de Rosemary - Ira Levin</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="207.jpg" class="image">
+        <div>
+            <a href="./Entre_quatro_paredes.html">
+            <button class="Tori">Entre Quatro Paredes - B.A. Paris</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="208.jpg" class="image">
+        <div>
+            <a href="./O_exorcista.html">
+            <button class="Tori">O Exorcista - William Peter Blatty</button></a>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="Fred">
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="209.jpg" class="image">
+        <div>
+            <a href="./Dracula.html">
+            <button class="Tori">Drácula - Bram Stoker</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="197.jpg" class="image">
+        <div>
+            <a href="./O_iluminado.html">
+            <button class="Tori">O Iluminado- Stephen King</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="198.jpg" class="image">
+        <div>
+            <a href="./Doutor_sono.html">
+            <button class="Tori">Doutor Sono- Stephen King</button></a>
+        </div>
+    </div>
+    </div>
+</main>
+<script>
+    function filterBooks() {
+        const input = document.getElementById('searchInput');
+        const filter = input.value.toLowerCase(); // Converte o texto para minúsculas
+        const bookList = document.getElementById('bookList');
+        const books = bookList.getElementsByClassName('book-item');
+
+        // Loop através de todos os itens da lista de livros
+        for (let i = 0; i < books.length; i++) {
+            const book = books[i];
+            const textValue = book.textContent || book.innerText; // Obtém o texto do livro
+
+            // Verifica se o texto do livro contém o valor do input
+            if (textValue.toLowerCase().includes(filter)) {
+                book.style.display = ""; // Mostra o livro se corresponder
+            } else {
+                book.style.display = "none"; // Esconde o livro se não corresponder
+            }
+        }
+    }
+</script>
+</body>
+</html>

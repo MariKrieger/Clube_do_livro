@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1270px;
+    margin: 0 auto; 
+    background-color: #FFF9F6;
+    font-family: Arial, sans-serif;
+}
+
+.Logo {
+    width: 120px;
+    border-radius: 50%;
+}
+
+header {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: #cbae99;
+    padding: 0 20px; 
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.titulo {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    flex: 1;
+    text-align: center; 
+    margin: 0; 
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    gap: 20px; 
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.menu li {
+    position: relative;
+    display: inline-block;
+}
+
+.menu li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.menu li:hover ul {
+    display: block;
+}
+
+.menu li ul li {
+    padding: 8px 12px;
+}
+
+.menu li ul li:hover {
+    background-color: #ddd;
+}
+
+.Monica, .Rachel, .Phoebe {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 0.875rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.TESTE {
+    text-decoration: none;
+    color: black;
+}
+
+.People {
+    margin-right: 30px;
+}
+
+
+.image {
+    margin-left: 40px;
+    width: 120px;
+    height: 150px;
+    margin-top: 60px;
+}
+
+
+.Tori {
+    background-color: #cbae99;
+    border: none;
+    width: 150px;
+    height: 70px;
+    border-radius: 10%;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: white;
+    margin: 20px 0 0 20px;
+}
+
+.Flower {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin-left: 20px;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.Power {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    margin-top: 8px;
+    font-size: 20px;
+}
+
+.Books {
+    margin-left: 20px;
+    margin-top: 30px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: black;
+    font-size: 35px;
+}
+
+
+#bookList {
+    margin-top: 20px;
+}
+
+.book-item {
+    margin: 5px 0;
+    display: block;
+}
+
+
+.search-container {
+    margin: 20px 0;
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+#searchInput {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+@media (max-width: 1024px) {
+    .titulo {
+        margin-left: 0;
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    .menu {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titulo {
+        font-size: 24px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .search-container {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 20px;
+    }
+
+    .menu {
+        gap: 10px;
+        font-size: 0.8rem;
+    }
+
+    #searchInput {
+        width: 150px;
+        font-size: 0.8rem;
+    }
+}
+
+.Rica, .Fred, .Daphne, .Scooby, .Velma, .Salsicha, .Soyeon, .YUQI, .Minnie, .Miyeon, .Shuhua, .Purpura, .Petunia, .Peonia, .Papoula, .Lotus, .Lirio, .Jasmin, .Cherry, .Camelia, .Iris, .Dalia, .HWAA, .Lady, .Luke, .Zelda {
+    display: flex;
+}

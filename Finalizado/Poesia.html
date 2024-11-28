@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poesia</title>
+    <link rel="stylesheet" href="Padrao.css">
+</head>
+<body>
+    <header>
+        <a href="./Interface.html"><img src="C.jpg" class="Logo"></a>
+        <h1 class="titulo">BOOK CLUB</h1>
+        <div class="menu-container">
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu">
+                <li class="Monica">Clubes
+                    <ul>
+                        <li><a href="./Inicial.html" class="TESTE">Clubes públicos</a></li>
+                        <li><a href="./Clube.html" class="TESTE">Clubes privados</a></li>
+                        <li><a href="./Crie.html" class="TESTE">Crie um clube</a></li>
+                    </ul>
+                </li>
+                <li class="Rachel">Livros
+                    <ul>
+                        <li><a href="./Acao.html" class="TESTE">Ação</a></li>
+                        <li><a href="./Aventura.html" class="TESTE">Aventura</a></li>
+                        <li><a href="./Distopia.html" class="TESTE">Distopia</a></li>
+                        <li><a href="./Drama.html" class="TESTE">Drama</a></li>
+                        <li><a href="./Fantasia.html" class="TESTE">Fantasia</a></li>
+                        <li><a href="./Ficcao.html" class="TESTE">Ficção</a></li>
+                        <li><a href="./Investigacao.html" class="TESTE">Investigação</a></li>
+                        <li><a href="./Poesia.html" class="TESTE">Poesia</a></li>
+                        <li><a href="./Romance.html" class="TESTE">Romance</a></li>
+                        <li><a href="./Suspense.html" class="TESTE">Suspense</a></li>
+                        <li><a href="./Terror.html" class="TESTE">Terror</a></li>
+                    </ul>
+                </li>
+                <li class="Phoebe">Extras
+                    <ul>
+                        <li><a href="./Resenhas.html" class="TESTE">Resenhas</a></li>
+                        <li><a href="./Timer.html" class="TESTE">Timer</a></li>
+                        <li><a href="./Metas_desafios.html" class="TESTE">Metas e desafios</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Buscar livros..." onkeyup="filterBooks()">
+        </div>
+        <div class="People">
+            <a href="./signup.html"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="black" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/></a></svg>
+        </div>
+    </header>
+<main>
+    <h2 class="Flower">Poesia</h2>
+    <p class="Power">A poesia é um gênero literário que se caracteriza pela expressão de emoções, ideias e sentimentos de forma subjetiva e conotativa. Ela pode ser escrita tanto em versos quanto em prosa, e é marcada pela ambiguidade e pela multiplicidade de significados, permitindo interpretações diversas por parte do leitor.</p>
+    <div id="bookList">
+    <div class="Rica">
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="163.jpg" class="image">
+        <div>
+            <a href="./A_princesa_salva.html">
+            <button class="Tori">A princesa salva a si mesma neste livro - Amanda Lovelace</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="164.jpg" class="image">
+        <div>
+            <a href="./A_bruxa_nao.html">
+            <button class="Tori">A bruxa não vai para a fogueira neste livro - Amanda Lovelace</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="165.jpg" class="image">
+        <div>
+            <a href="./A_voz_sereia.html">
+            <button class="Tori">A voz da sereia volta neste livro - Amanda Lovelace</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="172.jpg" class="image">
+        <div>
+            <a href="./Quebre_sapatinhos.html">
+            <button class="Tori">Quebre seus sapatinhos de cristal - Amanda Lovelace</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="173.jpg" class="image">
+        <div>
+            <a href="./Coroa_de_gelo.html">
+            <button class="Tori">Faça sua coroa de gelo brilhar - Amanda Lovelace</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="166.jpg" class="image">
+        <div>
+            <a href="./Contos_de_fadas.html">
+            <button class="Tori">Contos de Fadas & Poemas Vorazes para Alimentar a Alma - Nikita Gill</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="167.jpg" class="image">
+        <div>
+            <a href="./Sol_flores.html">
+            <button class="Tori">O que o sol faz com as flores- Rupi Kaur</button></a>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="Fred">
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="168.jpg" class="image">
+        <div>
+            <a href="./Cem_sonetos_de_amor.html">
+            <button class="Tori">Cem Sonetos de Amor - Pablo Neruda</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="169.jpg" class="image">
+        <div>
+            <a href="./Flores_nao_enviei.html">
+            <button class="Tori">Todas as flores que não te enviei- Felipe Rocha</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="170.jpg" class="image">
+        <div>
+            <a href="./Cartas_a_um_jovem_poeta.html">
+            <button class="Tori">Cartas a um jovem poeta- Rainer Maria</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="171.jpg" class="image">
+        <div>
+            <a href="./Brilha_queima.html">
+            <button class="Tori">Tudo nela brilha e queima: (Poesia Urbana) - Ryane Leão</button></a>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="Busca.js"></script>
+</main>
+</html>

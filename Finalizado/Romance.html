@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romance</title>
+    <link rel="stylesheet" href="Padrao.css">
+</head>
+<body>
+    <header>
+        <a href="./Interface.html"><img src="C.jpg" class="Logo"></a>
+        <h1 class="titulo">BOOK CLUB</h1>
+        <div class="menu-container">
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu">
+                <li class="Monica">Clubes
+                    <ul>
+                        <li><a href="./Inicial.html" class="TESTE">Clubes públicos</a></li>
+                        <li><a href="./Clube.html" class="TESTE">Clubes privados</a></li>
+                        <li><a href="./Crie.html" class="TESTE">Crie um clube</a></li>
+                    </ul>
+                </li>
+                <li class="Rachel">Livros
+                    <ul>
+                        <li><a href="./Acao.html" class="TESTE">Ação</a></li>
+                        <li><a href="./Aventura.html" class="TESTE">Aventura</a></li>
+                        <li><a href="./Distopia.html" class="TESTE">Distopia</a></li>
+                        <li><a href="./Drama.html" class="TESTE">Drama</a></li>
+                        <li><a href="./Fantasia.html" class="TESTE">Fantasia</a></li>
+                        <li><a href="./Ficcao.html" class="TESTE">Ficção</a></li>
+                        <li><a href="./Investigacao.html" class="TESTE">Investigação</a></li>
+                        <li><a href="./Poesia.html" class="TESTE">Poesia</a></li>
+                        <li><a href="./Romance.html" class="TESTE">Romance</a></li>
+                        <li><a href="./Suspense.html" class="TESTE">Suspense</a></li>
+                        <li><a href="./Terror.html" class="TESTE">Terror</a></li>
+                    </ul>
+                </li>
+                <li class="Phoebe">Extras
+                    <ul>
+                        <li><a href="./Resenhas.html" class="TESTE">Resenhas</a></li>
+                        <li><a href="./Timer.html" class="TESTE">Timer</a></li>
+                        <li><a href="./Metas_desafios.html" class="TESTE">Metas e desafios</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Buscar livros..." onkeyup="filterBooks()">
+        </div>
+        <div class="People">
+            <a href="./signup.html"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="black" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/></a></svg>
+        </div>
+    </header>
+<main>
+    <h2 class="Flower">Romance</h2>
+    <p class="Power">O romance é um gênero literário que se caracteriza por uma narrativa longa em prosa, apresentando uma história completa com diversos elementos estruturais. Este gênero possui uma rica tradição, tendo surgido no século XVIII como uma evolução das epopeias, que eram narrativas em verso sobre heróis e feitos grandiosos.</p>
+    <div id="bookList">
+    <div class="Rica">
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="174.jpg" class="image">
+        <div>
+            <a href="./A_Hipotese_do_Amor.html">
+            <button class="Tori">A Hipótese do Amor - Ali Hazelwood</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="175.jpg" class="image">
+        <div>
+            <a href="./Como_se_vingar_de_um_cretino.html">
+            <button class="Tori">Como se vingar de um cretino - Suzanne Enoch</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="176.jpg" class="image">
+        <div>
+            <a href="./Como_encantar_um_canalha.html">
+            <button class="Tori">Como encantar um canalha - Suzanne Enoch</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="177.jpg" class="image">
+        <div>
+            <a href="./Como_salvar_um_heroi.html">
+            <button class="Tori">Como salvar um herói - Suzanne Enoch</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="178.jpg" class="image">
+        <div>
+            <a href="./O_jogo_do_amor_odio.html">
+            <button class="Tori">O Jogo do Amor "Ódio" - Sally Thorne</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="179.jpg" class="image">
+        <div>
+            <a href="./Heartstopper1.html">
+            <button class="Tori">Heartstopper: Dois garotos, um encontro - Alice Oseman</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="180.jpg" class="image">
+        <div>
+            <a href="./Heartstopper2.html">
+            <button class="Tori">Heartstopper: Minha pessoa favorita - Alice Oseman</button></a>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="Fred">
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="181.jpg" class="image">
+        <div>
+            <a href="./Heartstopper3.html">
+            <button class="Tori">Heartstopper: Um passo adiante - Alice Oseman</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="182.jpg" class="image">
+        <div>
+            <a href="./Heartstopper4.html">
+            <button class="Tori">Heartstopper: De mãos dadas - Alice Oseman</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="183.jpg" class="image">
+        <div>
+            <a href="./Heartstopper5.html">
+            <button class="Tori">Heartstopper: Mais fortes juntos - Alice Oseman</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="184.jpg" class="image">
+        <div>
+            <a href="./Os_sete_maridos_de_Evelyn_Hugo.html">
+            <button class="Tori">Os Sete Maridos de Evelyn Hugo - Taylor Jenkins</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="185.jpg" class="image">
+        <div>
+            <a href="./Jack_O_Estripador.html">
+            <button class="Tori">Rastro de Sangue: Jack, O Estripador - Kerri Maniscalco</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="186.jpg" class="image">
+        <div>
+            <a href="./Principe_Dracula.html">
+            <button class="Tori">Rastro de Sangue: Príncipe Drácula  - Kerri Maniscalco</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="187.jpg" class="image">
+        <div>
+            <a href="./O_Grande_Houdini.html">
+            <button class="Tori">Rastro de Sangue: O Grande Houdini - Kerri Maniscalco</button></a>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="Daphne">
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="188.jpg" class="image">
+        <div>
+            <a href="./Holmes_O_Maligno.html">
+            <button class="Tori">Rastro de Sangue: Holmes, O Maligno - Kerri Maniscalco</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="189.jpg" class="image">
+        <div>
+            <a href="./O_segredo_de_Helena.html">
+            <button class="Tori">O Segredo de Helena - Lucinda Riley</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="190.jpg" class="image">
+        <div>
+            <a href="./O_segredo_da_livraria_de_Paris.html">
+            <button class="Tori">O segredo da livraria de Paris - Lily Graham</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="5.jpg" class="image">
+        <div>
+            <a href="./Destruidor_de_mundos.html">
+            <button class="Tori">Destruidor de Mundos - Victoria Aveyard</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="6.jpg" class="image">
+        <div>
+            <a href="./Destruidor_de_espadas.html">
+            <button class="Tori">Destruidor de espadas - Victoria Aveyard</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="40.jpg" class="image">
+        <div>
+            <a href="./Ladrao_de_raios.html">
+            <button class="Tori">Percy Jackson e Ladrão de raios - Frank Herbet</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="41.jpg" class="image">
+        <div>
+            <a href="./Mar_de_monstros.html">
+            <button class="Tori">Percy Jackson e o Mar de Monstros - Frank Herbet</button></a>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="Scooby">
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="42.jpg" class="image">
+        <div>
+            <a href="./A_maldicao_do_tita.html">
+            <button class="Tori">Percy Jackson e a Maldição do Titã - Frank Herbet</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="43.jpg" class="image">
+        <div>
+            <a href="./Batalha_do_labirinto.html">
+            <button class="Tori">Percy Jackson e a Batalha do Labirinto - Frank Herbet</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="44.jpg" class="image">
+        <div>
+            <a href="./Ultimo_olimpiano.html">
+            <button class="Tori">Percy Jackson e o Último Olimpiano - Frank Herbet</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="45.jpg" class="image">
+        <div>
+            <a href="./Calice_dos_deuses.html">
+            <button class="Tori">Percy Jackson e o Cálice dos Deuses - Frank Herbet</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="46.jpg" class="image">
+        <div>
+            <a href="./Furia_deusa_triplice.html">
+            <button class="Tori">Percy Jackson e a Fúria da Deusa Tríplice - Frank Herbet</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="52.jpg" class="image">
+        <div>
+            <a href="./Jogos_Vorazes.html">
+            <button class="Tori">Jogos Vorazes - Suzanne Collins</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="53.jpg" class="image">
+        <div>
+            <a href="./Em_chamas.html">
+            <button class="Tori">Em Chamas - Suzanne Collins</button></a>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="Velma">
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="54.jpg" class="image">
+        <div>
+            <a href="./A_Esperanca.html">
+            <button class="Tori">A Esperança - Suzanne Collins</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="55.jpg" class="image">
+        <div>
+            <a href="./A_Cantiga_de_Passaros_e_Serpentes.html">
+            <button class="Tori">A Cantiga dos Pássaros e Serpentes - Suzanne Collins</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="57.jpg" class="image">
+        <div>
+            <a href="./A_Selecao.html">
+            <button class="Tori">A Seleção - Kiera Cass</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="58.jpg" class="image">
+        <div>
+            <a href="./A_Elite.html">
+            <button class="Tori">A Elite - Kiera Cass</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="59.jpg" class="image">
+        <div>
+            <a href="./A_Escolha.html">
+            <button class="Tori">A Escolha - Kiera Cass</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="60.jpg" class="image">
+        <div>
+            <a href="./A_Herdeira.html">
+            <button class="Tori">A Herdeira - Kiera Cass</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="61.jpg" class="image">
+        <div>
+            <a href="./A_Coroa.html">
+            <button class="Tori">A Coroa - Kiera Cass</button></a>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="Salsicha">
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="62.jpg" class="image">
+        <div>
+            <a href="./Felizes_Para_Sempre.html">
+            <button class="Tori">Felizes Para Sempre - Kiera Cass</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="64.jpg" class="image">
+        <div>
+            <a href="./As_quatro_rainhas_mortas.html">
+            <button class="Tori">As quatro rainhas mortas - Astrid Scholte</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="65.jpg" class="image">
+        <div>
+            <a href="./O_orfanato_da_srta_peregrine.html">
+            <button class="Tori">O orfanato da Srta. Peregrine para crianças peculiares - Ransom Riggs</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="66.jpg" class="image">
+        <div>
+            <a href="./Cidade_dos_Etereos.html">
+            <button class="Tori">Cidade dos Etéreos - Ransom Riggs</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="67.jpg" class="image">
+        <div>
+            <a href="./Biblioteca_de_Almas.html">
+            <button class="Tori">Biblioteca de Almas - Ransom Riggs</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="68.jpg" class="image">
+        <div>
+            <a href="./Mapa_dos_Dias.html">
+            <button class="Tori">Mapa dos Dias - Ransom Riggs</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="69.jpg" class="image">
+        <div>
+            <a href="./A_Convencao_das_Aves.html">
+            <button class="Tori">A Convenção das Aves - Ransom Riggs</button></a>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="Soyeon">
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="70.jpg" class="image">
+        <div>
+            <a href="./As_desolacoes.html">
+            <button class="Tori">As Desolações do Recanto do Demônio - Ransom Riggs</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="71.jpg" class="image">
+        <div>
+            <a href="./A_cinco_passos_de_voce.html">
+            <button class="Tori">A Cinco Passos de Você - Rachel Lippincot</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="72.jpg" class="image">
+        <div>
+            <a href="./E_assim_que_acaba.html">
+            <button class="Tori">É Assim Que Acaba - Collen Hoover</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="73.jpg" class="image">
+        <div>
+            <a href="./E_Assim_Que_Comeca.html">
+            <button class="Tori">É Assim Que Começa - Collen Hoover</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="75.jpg" class="image">
+        <div>
+            <a href="./As_mil_partes_do_meu_coracao.html">
+            <button class="Tori">As mil partes do meu coração - Collen Hoover</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="76.jpg" class="image">
+        <div>
+            <a href="./Por_lugares_incriveis.html">
+            <button class="Tori">Por Lugares Incríveis - Jennifer Niven</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="77.jpg" class="image">
+        <div>
+            <a href="./As_vantagens_de_ser_invisivel.html">
+            <button class="Tori">As Vantagens de Ser Invisível - Stephen Chbosky</button></a>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="YUQI">
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="79.jpg" class="image">
+        <div>
+            <a href="./Trono_de_vidro.html">
+            <button class="Tori">Trono de Vidro - Sarah J. Maas</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="80.jpg" class="image">
+        <div>
+            <a href="./A_Lamina_Assassina.html">
+            <button class="Tori">A Lâmina Assassina - Sarah J. Maas</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="81.jpg" class="image">
+        <div>
+            <a href="./Coroa_da_meia-noite.html">
+            <button class="Tori">Coroa da Meia-Noite - Sarah J. Maas</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="82.jpg" class="image">
+        <div>
+            <a href="./Herdeira_do_fogo.html">
+            <button class="Tori">Herdeira do Fogo - Sarah J. Maas</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="83.jpg" class="image">
+        <div>
+            <a href="./Rainha_das_Sombras.html">
+            <button class="Tori">Rainha das Sombras  - Sarah J. Maas</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="84.jpg" class="image">
+        <div>
+            <a href="./Imperio_de_Tempestades.html">
+            <button class="Tori">Império de Tempestades - Sarah J. Maas</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="85.jpg" class="image">
+        <div>
+            <a href="./Torre_do_Alvorecer.html">
+            <button class="Tori">Torre do Alvorecer - Sarah J. Maas</button></a>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="Minnie">
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="86.jpg" class="image">
+        <div>
+            <a href="./Reino_de_Cinzas.html">
+            <button class="Tori">Reino de Cinzas - Sarah J. Maas</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="87.jpg" class="image">
+        <div>
+            <a href="./O_Nome_do_Vento.html">
+            <button class="Tori">O nome do vento - Patrick Rothfuss </button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="88.jpg" class="image">
+        <div>
+            <a href="./O_temor_do_sabio.html">
+            <button class="Tori">O temor do sábio - Patrick Rothfuss </button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="89.jpg" class="image">
+        <div>
+            <a href="./A_musica_do_silencio.html">
+            <button class="Tori">A música do silêncio - Patrick Rothfuss </button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="90.jpg" class="image">
+        <div>
+            <a href="./O_estreito_caminho_entre_desejos.html">
+            <button class="Tori">O estreito caminho entre desejos - Patrick Rothfuss </button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="91.jpg" class="image">
+        <div>
+            <a href="./A_rainha_vermelha.html">
+            <button class="Tori">A rainha vermelha - Victoria Aveyard</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="92.jpg" class="image">
+        <div>
+            <a href="./Cancao_da_rainha.html">
+            <button class="Tori">Canção da rainha - Victoria Aveyard</button></a>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="Miyeon">
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="93.jpg" class="image">
+        <div>
+            <a href="./Cicatrizes_de_aco.html">
+            <button class="Tori">Cicatrizes de aço - Victoria Aveyard</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="94.jpg" class="image">
+        <div>
+            <a href="./Espada_de_vidro.html">
+            <button class="Tori">Espada de vidro - Victoria Aveyard</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="95.jpg" class="image">
+        <div>
+            <a href="./A_prisao_do_rei.html">
+            <button class="Tori">A prisão do rei - Victoria Aveyard</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="96.jpg" class="image">
+        <div>
+            <a href="./Tempestade_de_guerra.html">
+            <button class="Tori">Tempestade de guerra - Victoria Aveyard</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="97.jpg" class="image">
+        <div>
+            <a href="./Trono_destruido.html">
+            <button class="Tori">Trono destruído - Victoria Aveyard</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="98.jpg" class="image">
+        <div>
+            <a href="./Os_garotos_corvos.html">
+            <button class="Tori">Os garotos corvos - Maggie Stiegvater</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="99.jpg" class="image">
+        <div>
+            <a href="./Ladroes_de_sonhos.html">
+            <button class="Tori">Ladrões de sonhos - Maggie Stiegvater</button></a>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="Shuhua">
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="100.jpg" class="image">
+        <div>
+            <a href="./Lirio_azul_azul_lirio.html">
+            <button class="Tori">Lírio azul, azul lírio - Maggie Stiegvater</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="101.jpg" class="image">
+        <div>
+            <a href="./O_rei_corvo.html">
+            <button class="Tori">O rei corvo - Maggie Stiegvater</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="102.jpg" class="image">
+        <div>
+            <a href="./Opala.html">
+            <button class="Tori">Opala - Maggie Stiegvater</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="103.jpg" class="image">
+        <div>
+            <a href="./A_Maldicao_do_Mar.html">
+            <button class="Tori">A Maldição do Mar - Shea Ernshaw</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="104.jpg" class="image">
+        <div>
+            <a href="./As_Brumas_de_Avalon.html">
+            <button class="Tori">As brumas de Avalon - Marion Zimmer Bradley</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="105.jpg" class="image">
+        <div>
+            <a href="./A_casa_da_floresta.html">
+            <button class="Tori">A casa da floresta - Marion Zimmer Bradley</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="106.jpg" class="image">
+        <div>
+            <a href="./A_senhora_de_Avalon.html">
+            <button class="Tori">A senhora de Avalon - Marion Zimmer Bradley</button></a>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="Petunia">
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="107.jpg" class="image">
+        <div>
+            <a href="./A_sacerdotisa_de_Avalon.html">
+            <button class="Tori">A sacerdotisa de Avalon - Marion Zimmer Bradley</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="108.jpg" class="image">
+        <div>
+            <a href="./Ancestrais_de_Avalon.html">
+            <button class="Tori">Ancestrais de Avalon - Marion Zimmer Bradley</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="109.jpg" class="image">
+        <div>
+            <a href="./Estilhaca-me.html">
+            <button class="Tori">Estilhaça-me - Tahereh Mafi</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="110.jpg" class="image">
+        <div>
+            <a href="./Unifica-me.html">
+            <button class="Tori">Unifica-me - Tahereh Mafi</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="111.jpg" class="image">
+        <div>
+            <a href="./Liberta-me.html">
+            <button class="Tori">Liberta-me - Tahereh Mafi</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="112.jpg" class="image">
+        <div>
+            <a href="./Incendeia-me.html">
+            <button class="Tori">Incendeia-me - Tahereh Mafi</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="113.jpg" class="image">
+        <div>
+            <a href="./Restaura-me.html">
+            <button class="Tori">Restaura-me  - Tahereh Mafi</button></a>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="Peonia">
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="114.jpg" class="image">
+        <div>
+            <a href="./Desafia-me.html">
+            <button class="Tori">Desafia-me - Tahereh Mafi</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="115.jpg" class="image">
+        <div>
+            <a href="./Decifra-me.html">
+            <button class="Tori">Decifra-me - Tahereh Mafi</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="116.jpg" class="image">
+        <div>
+            <a href="./Imagina-me.html">
+            <button class="Tori">Imagina-me - Tahereh Mafi</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="117.jpg" class="image">
+        <div>
+            <a href="./Aceita-me.html">
+            <button class="Tori">Aceita-me - Tahereh Mafi</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="118.jpg" class="image">
+        <div>
+            <a href="./Os_noivos_do_inverno.html">
+            <button class="Tori">Os Noivos do Inverno - Christelle Dabos</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="119.jpg" class="image">
+        <div>
+            <a href="./Desaparecidos_em_luz_da_lua.html">
+            <button class="Tori">Desaparecidos em Luz da Lua - Christelle Dabos</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="120.jpg" class="image">
+        <div>
+            <a href="./A_memoria_de_babel.html">
+            <button class="Tori">A Memória de Babel - Christelle Dabos</button></a>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="Purpura">
+    <div class="Oliver">
+    <div class="book-item">
+        <img src="121.jpg" class="image">
+        <div>
+            <a href="./Tempestade_de_ecos.html">
+            <button class="Tori">Tempestade de Ecos - Christelle Dabos</button></a>
+        </div>
+    </div>
+
+    <script src="Busca.js"></script>
+    </div>
+</main>
+
+</body>
+</html>

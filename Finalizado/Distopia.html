@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distopia</title>
+    <link rel="stylesheet" href="Padrao.css">
+</head>
+<body>
+    <header>
+        <a href="./Interface.html"><img src="C.jpg" class="Logo"></a>
+        <h1 class="titulo">BOOK CLUB</h1>
+        <div class="menu-container">
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu">
+                <li class="Monica">Clubes
+                    <ul>
+                        <li><a href="./Inicial.html" class="TESTE">Clubes públicos</a></li>
+                        <li><a href="./Clube.html" class="TESTE">Clubes privados</a></li>
+                        <li><a href="./Crie.html" class="TESTE">Crie um clube</a></li>
+                    </ul>
+                </li>
+                <li class="Rachel">Livros
+                    <ul>
+                        <li><a href="./Acao.html" class="TESTE">Ação</a></li>
+                        <li><a href="./Aventura.html" class="TESTE">Aventura</a></li>
+                        <li><a href="./Distopia.html" class="TESTE">Distopia</a></li>
+                        <li><a href="./Drama.html" class="TESTE">Drama</a></li>
+                        <li><a href="./Fantasia.html" class="TESTE">Fantasia</a></li>
+                        <li><a href="./Ficcao.html" class="TESTE">Ficção</a></li>
+                        <li><a href="./Investigacao.html" class="TESTE">Investigação</a></li>
+                        <li><a href="./Poesia.html" class="TESTE">Poesia</a></li>
+                        <li><a href="./Romance.html" class="TESTE">Romance</a></li>
+                        <li><a href="./Suspense.html" class="TESTE">Suspense</a></li>
+                        <li><a href="./Terror.html" class="TESTE">Terror</a></li>
+                    </ul>
+                </li>
+                <li class="Phoebe">Extras
+                    <ul>
+                        <li><a href="./Resenhas.html" class="TESTE">Resenhas</a></li>
+                        <li><a href="./Timer.html" class="TESTE">Timer</a></li>
+                        <li><a href="./Metas_desafios.html" class="TESTE">Metas e desafios</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Buscar livros..." onkeyup="filterBooks()">
+        </div>
+        <div class="People">
+            <a href="./signup.html"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="black" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/></a></svg>
+        </div>
+    </header>
+<main>
+    <h2 class="Flower">Distopia</h2>
+    <p class="Power">Na literatura, a palavra é geralmente associada a uma sociedade que enfrenta um totalitarismo geral, especialmente ligado ao Estado, e com relações pragmáticas entre os personagens, construídas na base da barganha, da troca de interesses e com uma espécie de medo que contagia as narrativas o tempo todo.</p>
+    <div id="bookList">
+    <div class="Rica">
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="50.jpg" class="image">
+        <div>
+            <a href="./Battle_royale.html">
+            <button class="Tori">Battle Royale - Koushun Takami</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="51.jpg" class="image">
+        <div>
+            <a href="./Admiravel_Mundo_Novo.html">
+            <button class="Tori">O admirável mundo novo - Aldous Huxley</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="52.jpg" class="image">
+        <div>
+            <a href="./Jogos_Vorazes.html">
+            <button class="Tori">Jogos Vorazes - Suzanne Collins</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="53.jpg" class="image">
+        <div>
+            <a href="./Em_chamas.html">
+            <button class="Tori">Em Chamas - Suzanne Collins</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="54.jpg" class="image">
+        <div>
+            <a href="./A_Esperanca.html">
+            <button class="Tori">A Esperança - Suzanne Collins</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="55.jpg" class="image">
+        <div>
+            <a href="./A_Cantiga_de_Passaros_e_Serpentes.html">
+            <button class="Tori">A Cantiga dos Pássaros e Serpentes - Suzanne Collins</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="56.jpg" class="image">
+        <div>
+            <a href="./O_Conto_da_Aia.html">
+            <button class="Tori">O Conto da Aia - Margaret Atwood</button></a>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="Fred">
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="57.jpg" class="image">
+        <div>
+            <a href="./A_Selecao.html">
+            <button class="Tori">A Seleção - Kiera Cass</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="58.jpg" class="image">
+        <div>
+            <a href="./A_Elite.html">
+            <button class="Tori">A Elite - Kiera Cass</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="59.jpg" class="image">
+        <div>
+            <a href="./A_Escolha.html">
+            <button class="Tori">A Escolha - Kiera Cass</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="60.jpg" class="image">
+        <div>
+            <a href="./A_Herdeira.html">
+            <button class="Tori">A Herdeira - Kiera Cass</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="61.jpg" class="image">
+        <div>
+            <a href="./A_Coroa.html">
+            <button class="Tori">A Coroa - Kiera Cass</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="62.jpg" class="image">
+        <div>
+            <a href="./Felizes_Para_Sempre.html">
+            <button class="Tori">Felizes Para Sempre - Kiera Cass</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="63.jpg" class="image">
+        <div>
+            <a href="./Metro_2033.html">
+            <button class="Tori">Metro 2033 - Dmitry Glukhovsk</button></a>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="Daphne">
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="64.jpg" class="image">
+        <div>
+            <a href="./As_quatro_rainhas_mortas.html">
+            <button class="Tori">As quatro rainhas mortas - Astrid Scholte</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="65.jpg" class="image">
+        <div>
+            <a href="./O_orfanato_da_srta_peregrine.html">
+            <button class="Tori">O orfanato da Srta. Peregrine para crianças peculiares - Ransom Riggs</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="66.jpg" class="image">
+        <div>
+            <a href="./Cidade_dos_Etereos.html">
+            <button class="Tori">Cidade dos Etéreos - Ransom Riggs</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="67.jpg" class="image">
+        <div>
+            <a href="./Biblioteca_de_Almas.html">
+            <button class="Tori">Biblioteca de Almas - Ransom Riggs</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="68.jpg" class="image">
+        <div>
+            <a href="./Mapa_dos_Dias.html">
+            <button class="Tori">Mapa dos Dias - Ransom Riggs</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="69.jpg" class="image">
+        <div>
+            <a href="./A_Convencao_das_Aves.html">
+            <button class="Tori">A Convenção das Aves - Ransom Riggs</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="70.jpg" class="image">
+        <div>
+            <a href="./As_desolacoes.html">
+            <button class="Tori">As Desolações do Recanto do Demônio - Ransom Riggs</button></a>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="Scooby">
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="8.jpg" class="image">
+        <div>
+            <a href="./Duna.html">
+            <button class="Tori">Duna - Frank Herbet</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="9.jpg" class="image">
+        <div>
+            <a href="./Messias_de_duna.html">
+            <button class="Tori">Messias de Duna - Frank Herbet</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="10.jpg" class="image">
+        <div>
+            <a href="./Filhos_de_duna.html">
+            <button class="Tori">Filhos de Duna - Frank Herbet</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="11.jpg" class="image">
+        <div>
+            <a href="./Imperador_deus_de_duna.html">
+            <button class="Tori">Imperador Deus de Duna - Frank Herbet</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="12.jpg" class="image">
+        <div>
+            <a href="./Hereges_de_duna.html">
+            <button class="Tori">Hereges de Duna - Frank Herbet</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="13.jpg" class="image">
+        <div>
+            <a href="./Herdeiras_de_duna.html">
+            <button class="Tori">Herdeiras de Duna - Frank Herbet</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="79.jpg" class="image">
+        <div>
+            <a href="./Trono_de_vidro.html">
+            <button class="Tori">Trono de Vidro - Sarah J. Maas</button></a>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="Velma">
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="80.jpg" class="image">
+        <div>
+            <a href="./A_Lamina_Assassina.html">
+            <button class="Tori">A Lâmina Assassina - Sarah J. Maas</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="81.jpg" class="image">
+        <div>
+            <a href="./Coroa_da_meia-noite.html">
+            <button class="Tori">Coroa da Meia-Noite - Sarah J. Maas</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="82.jpg" class="image">
+        <div>
+            <a href="./Herdeira_do_fogo.html">
+            <button class="Tori">Herdeira do Fogo - Sarah J. Maas</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="83.jpg" class="image">
+        <div>
+            <a href="./Rainha_das_Sombras.html">
+            <button class="Tori">Rainha das Sombras  - Sarah J. Maas</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="84.jpg" class="image">
+        <div>
+            <a href="./Imperio_de_Tempestades.html">
+            <button class="Tori">Império de Tempestades - Sarah J. Maas</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="85.jpg" class="image">
+        <div>
+            <a href="./Torre_do_Alvorecer.html">
+            <button class="Tori">Torre do Alvorecer - Sarah J. Maas</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="86.jpg" class="image">
+        <div>
+            <a href="./Reino_de_Cinzas.html">
+            <button class="Tori">Reino de Cinzas - Sarah J. Maas</button></a>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="Salsicha">
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="91.jpg" class="image">
+        <div>
+            <a href="./A_rainha_vermelha.html">
+            <button class="Tori">A rainha vermelha - Victoria Aveyard</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="92.jpg" class="image">
+        <div>
+            <a href="./Cancao_da_rainha.html">
+            <button class="Tori">Canção da rainha - Victoria Aveyard</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="93.jpg" class="image">
+        <div>
+            <a href="./Cicatrizes_de_aco.html">
+            <button class="Tori">Cicatrizes de aço - Victoria Aveyard</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="94.jpg" class="image">
+        <div>
+            <a href="./Espada_de_vidro.html">
+            <button class="Tori">Espada de vidro - Victoria Aveyard</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="95.jpg" class="image">
+        <div>
+            <a href="./A_prisao_do_rei.html">
+            <button class="Tori">A prisão do rei - Victoria Aveyard</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="96.jpg" class="image">
+        <div>
+            <a href="./Tempestade_de_guerra.html">
+            <button class="Tori">Tempestade de guerra - Victoria Aveyard</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="97.jpg" class="image">
+        <div>
+            <a href="./Trono_destruido.html">
+            <button class="Tori">Trono destruído - Victoria Aveyard</button></a>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="Soyeon">
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="104.jpg" class="image">
+        <div>
+            <a href="./As_Brumas_de_Avalon.html">
+            <button class="Tori">As Brumas de Avalon - Marion Zimmer Bradley</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="105.jpg" class="image">
+        <div>
+            <a href="./A_casa_da_floresta.html">
+            <button class="Tori">A casa da floresta - Marion Zimmer Bradley</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="106.jpg" class="image">
+        <div>
+            <a href="./A_senhora_de_Avalon.html">
+            <button class="Tori">A senhora de Avalon - Marion Zimmer Bradley</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="107.jpg" class="image">
+        <div>
+            <a href="./A_sacerdotisa_de_Avalon.html">
+            <button class="Tori">A sacerdotisa de Avalon - Marion Zimmer Bradley</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="108.jpg" class="image">
+        <div>
+            <a href="./Ancestrais_de_Avalon.html">
+            <button class="Tori">Ancestrais de Avalon - Marion Zimmer Bradley</button></a>
+        </div>
+    </div>
+    </div>  
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="109.jpg" class="image">
+        <div>
+            <a href="./Estilhaca-me.html">
+            <button class="Tori">Estilhaça-me - Tahereh Mafi</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="110.jpg" class="image">
+        <div>
+            <a href="./Unifica-me.html">
+            <button class="Tori">Unifica-me - Tahereh Mafi</button></a>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="YUQI">
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="111.jpg" class="image">
+        <div>
+            <a href="./Liberta-me.html">
+            <button class="Tori">Liberta-me - Tahereh Mafi</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="112.jpg" class="image">
+        <div>
+            <a href="./Incendeia-me.html">
+            <button class="Tori">Incendeia-me - Tahereh Mafi</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="113.jpg" class="image">
+        <div>
+            <a href="./Restaura-me.html">
+            <button class="Tori">Restaura-me  - Tahereh Mafi</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="114.jpg" class="image">
+        <div>
+            <a href="./Desafia-me.html">
+            <button class="Tori">Desafia-me - Tahereh Mafi</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="115.jpg" class="image">
+        <div>
+            <a href="./Decifra-me.html">
+            <button class="Tori">Decifra-me - Tahereh Mafi</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="116.jpg" class="image">
+        <div>
+            <a href="./Imagina-me.html">
+            <button class="Tori">Imagina-me - Tahereh Mafi</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="117.jpg" class="image">
+        <div>
+            <a href="./Aceita-me.html">
+            <button class="Tori">Aceita-me - Tahereh Mafi</button></a>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="Minnie">
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="124.jpg" class="image">
+        <div>
+            <a href="./A_guerra_dos_tronos.html">
+            <button class="Tori">A Guerra dos Tronos - Geogre R.R. Martin</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="125.jpg" class="image">
+        <div>
+            <a href="./A_furia_dos_reis.html">
+            <button class="Tori">A Fúria dos Reis - Geogre R.R. Martin</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="126.jpg" class="image">
+        <div>
+            <a href="./A_tormenta_de_espadas.html">
+            <button class="Tori">A Tormenta de Espadas - Geogre R.R. Martin</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="127.jpg" class="image">
+        <div>
+            <a href="./O_festim_dos_corvos.html">
+            <button class="Tori">O Festim dos Corvos - Geogre R.R. Martin</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="128.jpg" class="image">
+        <div>
+            <a href="./A_danca_dos_dragoes.html">
+            <button class="Tori">A Dança dos Dragões - Geogre R.R. Martin</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="132.jpg" class="image">
+        <div>
+            <a href="./A_guerra_dos_mundos.html">
+            <button class="Tori">A Guerra dos Mundos - H.G. Wells</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="133.jpg" class="image">
+        <div>
+            <a href="./A_biblioteca_da_meia_noite.html">
+            <button class="Tori">A Biblioteca da Meia-Noite - Matt Haig</button></a>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="Miyeon">
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="205.jpg" class="image">
+        <div>
+            <a href="./Saboroso_cadaver.html">
+            <button class="Tori">Saboroso Cadáver - Agustina Bazterrica</button></a>
+        </div>
+    </div>
+</main>
+<script src="Busca.js"></script>
+</body>
+</html>

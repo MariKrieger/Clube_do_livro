@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investigação</title>
+    <link rel="stylesheet" href="Padrao.css">
+</head>
+<body>
+    <header>
+        <a href="./Interface.html"><img src="C.jpg" class="Logo"></a>
+        <h1 class="titulo">BOOK CLUB</h1>
+        <div class="menu-container">
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu">
+                <li class="Monica">Clubes
+                    <ul>
+                        <li><a href="./Inicial.html" class="TESTE">Clubes públicos</a></li>
+                        <li><a href="./Clube.html" class="TESTE">Clubes privados</a></li>
+                        <li><a href="./Crie.html" class="TESTE">Crie um clube</a></li>
+                    </ul>
+                </li>
+                <li class="Rachel">Livros
+                    <ul>
+                        <li><a href="./Acao.html" class="TESTE">Ação</a></li>
+                        <li><a href="./Aventura.html" class="TESTE">Aventura</a></li>
+                        <li><a href="./Distopia.html" class="TESTE">Distopia</a></li>
+                        <li><a href="./Drama.html" class="TESTE">Drama</a></li>
+                        <li><a href="./Fantasia.html" class="TESTE">Fantasia</a></li>
+                        <li><a href="./Ficcao.html" class="TESTE">Ficção</a></li>
+                        <li><a href="./Investigacao.html" class="TESTE">Investigação</a></li>
+                        <li><a href="./Poesia.html" class="TESTE">Poesia</a></li>
+                        <li><a href="./Romance.html" class="TESTE">Romance</a></li>
+                        <li><a href="./Suspense.html" class="TESTE">Suspense</a></li>
+                        <li><a href="./Terror.html" class="TESTE">Terror</a></li>
+                    </ul>
+                </li>
+                <li class="Phoebe">Extras
+                    <ul>
+                        <li><a href="./Resenhas.html" class="TESTE">Resenhas</a></li>
+                        <li><a href="./Timer.html" class="TESTE">Timer</a></li>
+                        <li><a href="./Metas_desafios.html" class="TESTE">Metas e desafios</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Buscar livros..." onkeyup="filterBooks()">
+        </div>
+        <div class="People">
+            <a href="./signup.html"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="black" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/></a></svg>
+        </div>
+    </header>
+<main>
+    <h2 class="Flower">Investigação</h2>
+    <p class="Power">A investigação como gênero literário é uma forma que se concentra na exploração de mistérios, crimes ou enigmas, frequentemente envolvendo a figura de um detetive ou investigador. Este gênero é caracterizado por sua estrutura narrativa que busca revelar a verdade por meio da coleta de pistas e evidências, culminando em uma resolução que geralmente surpreende o leitor.</p>
+    <div id="bookList">
+    <div class="Rica">
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="134.jpg" class="image">
+        <div>
+            <a href="./Assassinato_Expresso.html">
+            <button class="Tori">Assassinato no Expresso do Oriente - Agatha Christie</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="135.jpg" class="image">
+        <div>
+            <a href="./A_Mandibula_de_Caim.html">
+            <button class="Tori">A mandíbula de Caim - Edward Powys Mathers</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="136.jpg" class="image">
+        <div>
+            <a href="./Um_estudo_em_vermelho.html">
+            <button class="Tori">Um estudo em vermelho - Arthur Conan Doyle</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="137.jpg" class="image">
+        <div>
+            <a href="./O_signo_dos_quatro.html">
+            <button class="Tori">O signo dos quatro - Arthur Conan Doyle</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="138.jpg" class="image">
+        <div>
+            <a href="./Aventuras_Sherlock.html">
+            <button class="Tori">As aventuras de Sherlock Holmes - Arthur Conan Doyle</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="139.jpg" class="image">
+        <div>
+            <a href="./Memorias_Sherlock.html">
+            <button class="Tori">As memórias de Sherlock Holmes - Arthur Conan Doyle</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="140.jpg" class="image">
+        <div>
+            <a href="./O_cao_dos_Baskerville.html">
+            <button class="Tori">O cão dos Baskerville - Arthur Conan Doyle</button></a>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="Fred">
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="141.jpg" class="image">
+        <div>
+            <a href="./Volta_Sherlock.html">
+            <button class="Tori">A volta de Sherlock Holmes - Arthur Conan Doyle</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="142.jpg" class="image">
+        <div>
+            <a href="./O_vale_do_medo.html">
+            <button class="Tori">O vale do medo - Arthur Conan Doyle</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="143.jpg" class="image">
+        <div>
+            <a href="./Adeus_Sherlock.html">
+            <button class="Tori">O último adeus de Sherlock Holmes - Arthur Conan Doyle</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="144.jpg" class="image">
+        <div>
+            <a href="./Arquivos_Sherlock.html">
+            <button class="Tori">Os arquivos de Sherlock Holmes - Arthur Conan Doyle</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="145.jpg" class="image">
+        <div>
+            <a href="./Os_Assassinatos_na_Rua_Morgue.html">
+            <button class="Tori">Os Assassinatos na Rua Morgue - Edgar Allan Poe</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="146.jpg" class="image">
+        <div>
+            <a href="./Natureza_morta.html">
+            <button class="Tori">Natureza Morta - Louise Penny</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="147.jpg" class="image">
+        <div>
+            <a href="./Graca_fatal.html">
+            <button class="Tori">Graça fatal - Louise Penny</button></a>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="Daphne">
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="148.jpg" class="image">
+        <div>
+            <a href="./O_mais_cruel_dos_meses.html">
+            <button class="Tori">O mais cruel dos meses - Louise Penny</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="149.jpg" class="image">
+        <div>
+            <a href="./E_proibido_matar.html">
+            <button class="Tori">É proibido matar - Louise Penny</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="150.jpg" class="image">
+        <div>
+            <a href="./Revelacao_brutal.html">
+            <button class="Tori">Revelação brutal - Louise Penny</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="151.jpg" class="image">
+        <div>
+            <a href="./Enterre_seus_mortos.html">
+            <button class="Tori">Enterre seus mortos - Louise Penny</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="152.jpg" class="image">
+        <div>
+            <a href="./Um_truque_de_luz.html">
+            <button class="Tori">Um truque de luz - Louise Penny</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="153.jpg" class="image">
+        <div>
+            <a href="./Morte_no_internato.html">
+            <button class="Tori">Morte no Internato - Lucinda Riley</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="154.jpg" class="image">
+        <div>
+            <a href="./Os_homens_mulheres.html">
+            <button class="Tori">Os homens que não amavam as mulheres - Stieg Larsson</button></a>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="Scooby">
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="155.jpg" class="image">
+        <div>
+            <a href="./A_menina_fogo.html">
+            <button class="Tori">A menina que brincava com fogo - Stieg Larsson</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="156.jpg" class="image">
+        <div>
+            <a href="./Rainha_castelo_ar.html">
+            <button class="Tori">A rainha do castelo de ar - Stieg Larsson</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="157.jpg" class="image">
+        <div>
+            <a href="./Garota_teia_aranha.html">
+            <button class="Tori">A garota na teia de aranha -  David Lagercrantz</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="158.jpg" class="image">
+        <div>
+            <a href="./Homem_buscava_sombra.html">
+            <button class="Tori">O homem que buscava sua sombra -  David Lagercrantz</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="159.jpg" class="image">
+        <div>
+            <a href="./Garota_marcada_morrer.html">
+            <button class="Tori">A garota marcada para morrer -  David Lagercrantz</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="160.jpg" class="image">
+        <div>
+            <a href="./Um_de_nos_esta_mentindo.html">
+            <button class="Tori">Um de nós está mentindo - Karen M. McManus</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="161.jpg" class="image">
+        <div>
+            <a href="./Um_de_nos_e_o_proximo.html">
+            <button class="Tori">Um de nós é o próximo - Karen M. McManus</button></a>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="Velma">
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="162.jpg" class="image">
+        <div>
+            <a href="./Um_de_nos_esta_de_volta.html">
+            <button class="Tori">Um de nós está de volta - Karen M. McManus</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="185.jpg" class="image">
+        <div>
+            <a href="./Jack_O_Estripador.html">
+            <button class="Tori">Rastro de Sangue: Jack, O Estripador - Kerri Maniscalco</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="186.jpg" class="image">
+        <div>
+            <a href="./Principe_Dracula.html">
+            <button class="Tori">Rastro de Sangue: Príncipe Drácula  - Kerri Maniscalco</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="187.jpg" class="image">
+        <div>
+            <a href="./O_Grande_Houdini.html">
+            <button class="Tori">Rastro de Sangue: O Grande Houdini - Kerri Maniscalco</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="188.jpg" class="image">
+        <div>
+            <a href="./Holmes_O_Maligno.html">
+            <button class="Tori">Rastro de Sangue: Holmes, O Maligno - Kerri Maniscalco</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="191.jpg" class="image">
+        <div>
+            <a href="./A_paciente_silenciosa.html">
+            <button class="Tori">A paciente silenciosa -  Alex Michaelides</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="197.jpg" class="image">
+        <div>
+            <a href="./O_iluminado.html">
+            <button class="Tori">O Iluminado- Stephen King</button></a>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="Salsicha">
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="198.jpg" class="image">
+        <div>
+            <a href="./Doutor_sono.html">
+            <button class="Tori">Doutor Sono- Stephen King</button></a>
+        </div>
+    </div>
+    </div>
+    <div class="Oliver">
+        <div class="book-item">
+        <img src="204.jpg" class="image">
+        <div>
+            <a href="./O_vilarejo.html">
+            <button class="Tori">O Vilarejo - Raphael Montes</button></a>
+        </div>
+    </div>
+    </div>
+</main>
+<script src="Busca.js"></script>
+</body>
+</html>
